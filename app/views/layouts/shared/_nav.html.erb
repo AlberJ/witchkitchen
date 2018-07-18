@@ -13,6 +13,11 @@
     </div>
 
     <% if user_signed_in? %>
+      <div style="margin-right:20px;">
+        <%= link_to witch_myrecipes_path, class:"nav-item" do %>
+          <span class="btn btn-light">Minhas Receitas </span>
+        <% end %>
+      </div>
       <%= link_to destroy_user_session_path, method: :delete, class:"nav-item" do %>
         <span class="btn btn-light">Sair </span><%= current_user.email %> <%= current_user.id %>
       <% end %>

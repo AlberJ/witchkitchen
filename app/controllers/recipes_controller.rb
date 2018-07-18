@@ -16,7 +16,7 @@ class RecipesController < ApplicationController
   # GET /recipes/new
   def new
     @recipe = Recipe.new
-    # @recipe.user = current_user.id
+    @user = current_user
   end
 
   # GET /recipes/1/edit

@@ -13518,3 +13518,2267 @@ Processing by RecipesController#index as HTML
 Completed 200 OK in 1809ms (Views: 1729.0ms | ActiveRecord: 40.5ms)
 
 
+Started GET "/recipes/new" for 10.0.2.2 at 2018-07-18 20:32:39 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.9ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by RecipesController#new as HTML
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering recipes/new.html.erb within layouts/application
+  Rendered recipes/_ingredient_fields.html.erb (3.2ms)
+  Rendered recipes/_form.html.erb (11100.0ms)
+  Rendered recipes/new.html.erb within layouts/application (11200.1ms)
+Completed 500 Internal Server Error in 12057ms (ActiveRecord: 9.8ms)
+
+
+  
+SyntaxError (/vagrant/witchkitchen/app/views/recipes/_ingredient_fields.html.erb:6: syntax error, unexpected keyword_class, expecting ')'
+...pend=( f.text_field :name class:"form-control" );@output_buf...
+...                          ^~~~~
+/vagrant/witchkitchen/app/views/recipes/_ingredient_fields.html.erb:6: syntax error, unexpected ')', expecting &. or :: or '[' or '.'
+...ld :name class:"form-control" );@output_buffer.safe_append='
+...                              ^
+/vagrant/witchkitchen/app/views/recipes/_ingredient_fields.html.erb:10: syntax error, unexpected keyword_class, expecting ')'
+...=( f.text_field :quantity class:"form-control" );@output_buf...
+...                          ^~~~~
+/vagrant/witchkitchen/app/views/recipes/_ingredient_fields.html.erb:10: syntax error, unexpected ')', expecting &. or :: or '[' or '.'
+...quantity class:"form-control" );@output_buffer.safe_append='
+...                              ^
+/vagrant/witchkitchen/app/views/recipes/_ingredient_fields.html.erb:14: syntax error, unexpected keyword_class, expecting ')'
+...pend=( f.text_field :unit class:"form-control" );@output_buf...
+...                          ^~~~~
+/vagrant/witchkitchen/app/views/recipes/_ingredient_fields.html.erb:14: syntax error, unexpected ')', expecting &. or :: or '[' or '.'
+...ld :unit class:"form-control" );@output_buffer.safe_append='
+...                              ^
+/vagrant/witchkitchen/app/views/recipes/_ingredient_fields.html.erb:23: syntax error, unexpected keyword_ensure, expecting ')'
+          ensure
+          ^~~~~~
+/vagrant/witchkitchen/app/views/recipes/_ingredient_fields.html.erb:25: syntax error, unexpected keyword_end, expecting ')'
+          end
+          ^~~):
+  
+app/views/recipes/_ingredient_fields.html.erb:6: syntax error, unexpected keyword_class, expecting ')'
+app/views/recipes/_ingredient_fields.html.erb:6: syntax error, unexpected ')', expecting &. or :: or '[' or '.'
+app/views/recipes/_ingredient_fields.html.erb:10: syntax error, unexpected keyword_class, expecting ')'
+app/views/recipes/_ingredient_fields.html.erb:10: syntax error, unexpected ')', expecting &. or :: or '[' or '.'
+app/views/recipes/_ingredient_fields.html.erb:14: syntax error, unexpected keyword_class, expecting ')'
+app/views/recipes/_ingredient_fields.html.erb:14: syntax error, unexpected ')', expecting &. or :: or '[' or '.'
+app/views/recipes/_ingredient_fields.html.erb:23: syntax error, unexpected keyword_ensure, expecting ')'
+app/views/recipes/_ingredient_fields.html.erb:25: syntax error, unexpected keyword_end, expecting ')'
+app/views/recipes/_form.html.erb:24:in `block in _app_views_recipes__form_html_erb__3664386551081189430_27080100'
+app/views/recipes/_form.html.erb:1:in `_app_views_recipes__form_html_erb__3664386551081189430_27080100'
+app/views/recipes/new.html.erb:4:in `_app_views_recipes_new_html_erb___1239614650732965113_27756280'
+Started GET "/recipes/" for 10.0.2.2 at 2018-07-18 20:33:31 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RecipesController#index as HTML
+  Rendering recipes/index.html.erb within layouts/application
+  [1m[36mRecipe Load (0.9ms)[0m  [1m[34mSELECT  `recipes`.* FROM `recipes` LIMIT 7 OFFSET 0[0m
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 9 LIMIT 1[0m
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT COUNT(*) FROM `ingredients` WHERE `ingredients`.`recipe_id` = 1[0m
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 11 LIMIT 1[0m
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT COUNT(*) FROM `ingredients` WHERE `ingredients`.`recipe_id` = 2[0m
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 5 LIMIT 1[0m
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT COUNT(*) FROM `ingredients` WHERE `ingredients`.`recipe_id` = 3[0m
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 20 LIMIT 1[0m
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `ingredients` WHERE `ingredients`.`recipe_id` = 4[0m
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 18 LIMIT 1[0m
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT COUNT(*) FROM `ingredients` WHERE `ingredients`.`recipe_id` = 5[0m
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 9 LIMIT 1[0m  [["id", 9], ["LIMIT", 1]]
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `ingredients` WHERE `ingredients`.`recipe_id` = 6[0m
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `ingredients` WHERE `ingredients`.`recipe_id` = 7[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT COUNT(*) FROM `recipes`[0m
+  Rendered recipes/index.html.erb within layouts/application (947.2ms)
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendered layouts/shared/_nav.html.erb (31.4ms)
+Completed 200 OK in 5803ms (Views: 5692.2ms | ActiveRecord: 14.4ms)
+
+
+Started GET "/recipes/new" for 10.0.2.2 at 2018-07-18 20:33:39 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RecipesController#new as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering recipes/new.html.erb within layouts/application
+  Rendered recipes/_ingredient_fields.html.erb (2.5ms)
+  Rendered recipes/_form.html.erb (134.5ms)
+  Rendered recipes/new.html.erb within layouts/application (197.4ms)
+  Rendered layouts/shared/_nav.html.erb (3.6ms)
+Completed 200 OK in 1330ms (Views: 1198.5ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/recipes" for 10.0.2.2 at 2018-07-18 20:33:51 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RecipesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"fR0OLaZ1za+2cxW5pb7rDqxJEIhomIO8seZbghuTjaNiaGA78leBIRPaqnIq1d3FFDhKWYzQJXftTL4jV3dEfQ==", "recipe"=>{"user_id"=>"", "ingredients_attributes"=>{"1531946022889"=>{"name"=>"", "quantity"=>"", "unit"=>"", "_destroy"=>"false"}}, "preparation"=>"zvb"}, "commit"=>"Criar Recipe"}
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.5ms)[0m  [1m[31mROLLBACK[0m
+  Rendering recipes/new.html.erb within layouts/application
+  Rendered recipes/_ingredient_fields.html.erb (27.5ms)
+  Rendered recipes/_form.html.erb (98.7ms)
+  Rendered recipes/new.html.erb within layouts/application (202.4ms)
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendered layouts/shared/_nav.html.erb (8.9ms)
+Completed 200 OK in 1246ms (Views: 1229.4ms | ActiveRecord: 1.9ms)
+
+
+Started POST "/recipes" for 10.0.2.2 at 2018-07-18 20:39:50 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RecipesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ZF36xVWkgF0BgsdjDxz5Jbh3AcWfRqYVVr6W8TVnBwyIhkr7wpmqatotNXYdx8aFelQTX4zFbrRLXhw+qtft0A==", "recipe"=>{"user_id"=>"", "ingredients_attributes"=>{"1531946040287"=>{"name"=>"", "quantity"=>"", "unit"=>"", "_destroy"=>"false"}}, "preparation"=>"zvb"}, "commit"=>"Criar Recipe"}
+  [1m[35m (0.6ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.4ms)[0m  [1m[31mROLLBACK[0m
+  Rendering recipes/new.html.erb within layouts/application
+  Rendered recipes/_ingredient_fields.html.erb (2.8ms)
+  Rendered recipes/_form.html.erb (109.2ms)
+  Rendered recipes/new.html.erb within layouts/application (192.4ms)
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendered layouts/shared/_nav.html.erb (34.6ms)
+Completed 200 OK in 1253ms (Views: 1242.2ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/recipes" for 10.0.2.2 at 2018-07-18 20:40:51 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RecipesController#index as HTML
+  Rendering recipes/index.html.erb within layouts/application
+  [1m[36mRecipe Load (0.8ms)[0m  [1m[34mSELECT  `recipes`.* FROM `recipes` LIMIT 7 OFFSET 0[0m
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 9 LIMIT 1[0m
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `ingredients` WHERE `ingredients`.`recipe_id` = 1[0m
+  [1m[36mUser Load (17.2ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 11 LIMIT 1[0m
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT COUNT(*) FROM `ingredients` WHERE `ingredients`.`recipe_id` = 2[0m
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 5 LIMIT 1[0m
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT COUNT(*) FROM `ingredients` WHERE `ingredients`.`recipe_id` = 3[0m
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 20 LIMIT 1[0m
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT COUNT(*) FROM `ingredients` WHERE `ingredients`.`recipe_id` = 4[0m
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 18 LIMIT 1[0m
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `ingredients` WHERE `ingredients`.`recipe_id` = 5[0m
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 9 LIMIT 1[0m  [["id", 9], ["LIMIT", 1]]
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT COUNT(*) FROM `ingredients` WHERE `ingredients`.`recipe_id` = 6[0m
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT COUNT(*) FROM `ingredients` WHERE `ingredients`.`recipe_id` = 7[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT COUNT(*) FROM `recipes`[0m
+  Rendered recipes/index.html.erb within layouts/application (1070.2ms)
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendered layouts/shared/_nav.html.erb (33.5ms)
+Completed 200 OK in 2153ms (Views: 2025.2ms | ActiveRecord: 31.8ms)
+
+
+Started GET "/recipes/new" for 10.0.2.2 at 2018-07-18 20:40:56 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RecipesController#new as HTML
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering recipes/new.html.erb within layouts/application
+  Rendered recipes/_ingredient_fields.html.erb (28.1ms)
+  Rendered recipes/_form.html.erb (130.5ms)
+  Rendered recipes/new.html.erb within layouts/application (189.9ms)
+  Rendered layouts/shared/_nav.html.erb (1.2ms)
+Completed 200 OK in 1208ms (Views: 1115.3ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/recipes/new" for 10.0.2.2 at 2018-07-18 20:42:04 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RecipesController#new as HTML
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering recipes/new.html.erb within layouts/application
+  Rendered recipes/_ingredient_fields.html.erb (3.0ms)
+  Rendered recipes/_form.html.erb (100.6ms)
+  Rendered recipes/new.html.erb within layouts/application (160.3ms)
+  Rendered layouts/shared/_nav.html.erb (3.1ms)
+Completed 200 OK in 1200ms (Views: 1108.2ms | ActiveRecord: 1.3ms)
+
+
+Started POST "/recipes" for 10.0.2.2 at 2018-07-18 20:42:27 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RecipesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"8DrA2CvzW2SDKqClVhWFzVRqzKtOL912JNr3+xuGd7sc4XDmvM5xU1iFUrBEzrptlkneMV2sFdc5On00hDadZw==", "recipe"=>{"user_id"=>"", "ingredients_attributes"=>{"1531946536605"=>{"name"=>"", "quantity"=>"", "unit"=>"", "_destroy"=>"false"}}, "preparation"=>"d"}, "commit"=>"Criar Recipe"}
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  Rendering recipes/new.html.erb within layouts/application
+  Rendered recipes/_ingredient_fields.html.erb (1.1ms)
+  Rendered recipes/_form.html.erb (133.2ms)
+  Rendered recipes/new.html.erb within layouts/application (201.9ms)
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendered layouts/shared/_nav.html.erb (8.0ms)
+Completed 200 OK in 1153ms (Views: 1141.2ms | ActiveRecord: 1.6ms)
+
+
+Started POST "/recipes" for 10.0.2.2 at 2018-07-18 20:42:41 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RecipesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"6cz24FhwclU30aNevPT48sieQt3dhfzxUmqQ2vOat4kFF0bez01YYux+UUuuL8dSCr1QR84GNFBPihoVbCpdVQ==", "recipe"=>{"user_id"=>"", "ingredients_attributes"=>{"1531946551145"=>{"name"=>"", "quantity"=>"4", "unit"=>"", "_destroy"=>"false"}}, "preparation"=>"d"}, "commit"=>"Criar Recipe"}
+  [1m[35m (0.7ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.6ms)[0m  [1m[31mROLLBACK[0m
+  Rendering recipes/new.html.erb within layouts/application
+  Rendered recipes/_ingredient_fields.html.erb (3.8ms)
+  Rendered recipes/_ingredient_fields.html.erb (3.7ms)
+  Rendered recipes/_form.html.erb (210.1ms)
+  Rendered recipes/new.html.erb within layouts/application (311.4ms)
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendered layouts/shared/_nav.html.erb (8.0ms)
+Completed 200 OK in 1286ms (Views: 1232.1ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/" for 10.0.2.2 at 2018-07-18 20:42:56 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RecipesController#index as HTML
+  Rendering recipes/index.html.erb within layouts/application
+  [1m[36mRecipe Load (0.8ms)[0m  [1m[34mSELECT  `recipes`.* FROM `recipes` LIMIT 7 OFFSET 0[0m
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 9 LIMIT 1[0m
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT COUNT(*) FROM `ingredients` WHERE `ingredients`.`recipe_id` = 1[0m
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 11 LIMIT 1[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT COUNT(*) FROM `ingredients` WHERE `ingredients`.`recipe_id` = 2[0m
+  [1m[36mUser Load (21.9ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 5 LIMIT 1[0m
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT COUNT(*) FROM `ingredients` WHERE `ingredients`.`recipe_id` = 3[0m
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 20 LIMIT 1[0m
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT COUNT(*) FROM `ingredients` WHERE `ingredients`.`recipe_id` = 4[0m
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 18 LIMIT 1[0m
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT COUNT(*) FROM `ingredients` WHERE `ingredients`.`recipe_id` = 5[0m
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 9 LIMIT 1[0m  [["id", 9], ["LIMIT", 1]]
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT COUNT(*) FROM `ingredients` WHERE `ingredients`.`recipe_id` = 6[0m
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT COUNT(*) FROM `ingredients` WHERE `ingredients`.`recipe_id` = 7[0m
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT COUNT(*) FROM `recipes`[0m
+  Rendered recipes/index.html.erb within layouts/application (947.4ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendered layouts/shared/_nav.html.erb (30.5ms)
+Completed 200 OK in 2004ms (Views: 1880.0ms | ActiveRecord: 36.3ms)
+
+
+Started GET "/recipes/1" for 10.0.2.2 at 2018-07-18 20:43:00 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RecipesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mRecipe Load (0.9ms)[0m  [1m[34mSELECT  `recipes`.* FROM `recipes` WHERE `recipes`.`id` = 1 LIMIT 1[0m
+  Rendering recipes/show.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 9 LIMIT 1[0m
+  [1m[36mIngredient Load (0.7ms)[0m  [1m[34mSELECT `ingredients`.* FROM `ingredients` WHERE `ingredients`.`recipe_id` = 1[0m
+  Rendered recipes/show.html.erb within layouts/application (39.0ms)
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendered layouts/shared/_nav.html.erb (10.1ms)
+Completed 200 OK in 1098ms (Views: 1064.6ms | ActiveRecord: 3.4ms)
+
+
+Started GET "/recipes/1/edit" for 10.0.2.2 at 2018-07-18 20:43:04 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RecipesController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mRecipe Load (1.6ms)[0m  [1m[34mSELECT  `recipes`.* FROM `recipes` WHERE `recipes`.`id` = 1 LIMIT 1[0m
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering recipes/edit.html.erb within layouts/application
+  [1m[36mIngredient Load (1.0ms)[0m  [1m[34mSELECT `ingredients`.* FROM `ingredients` WHERE `ingredients`.`recipe_id` = 1[0m
+  Rendered recipes/_ingredient_fields.html.erb (3.2ms)
+  Rendered recipes/_ingredient_fields.html.erb (1.6ms)
+  Rendered recipes/_ingredient_fields.html.erb (1.6ms)
+  Rendered recipes/_ingredient_fields.html.erb (2.0ms)
+  Rendered recipes/_ingredient_fields.html.erb (4.1ms)
+  Rendered recipes/_form.html.erb (532.6ms)
+  Rendered recipes/edit.html.erb within layouts/application (622.1ms)
+  Rendered layouts/shared/_nav.html.erb (2.8ms)
+Completed 200 OK in 1700ms (Views: 1603.1ms | ActiveRecord: 3.5ms)
+
+
+Started GET "/recipes/1" for 10.0.2.2 at 2018-07-18 20:43:25 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RecipesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mRecipe Load (9.0ms)[0m  [1m[34mSELECT  `recipes`.* FROM `recipes` WHERE `recipes`.`id` = 1 LIMIT 1[0m
+  Rendering recipes/show.html.erb within layouts/application
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 9 LIMIT 1[0m
+  [1m[36mIngredient Load (0.5ms)[0m  [1m[34mSELECT `ingredients`.* FROM `ingredients` WHERE `ingredients`.`recipe_id` = 1[0m
+  Rendered recipes/show.html.erb within layouts/application (14.4ms)
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendered layouts/shared/_nav.html.erb (8.6ms)
+Completed 200 OK in 1104ms (Views: 1018.0ms | ActiveRecord: 11.3ms)
+
+
+Started GET "/recipes" for 10.0.2.2 at 2018-07-18 20:43:30 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RecipesController#index as HTML
+  Rendering recipes/index.html.erb within layouts/application
+  [1m[36mRecipe Load (1.1ms)[0m  [1m[34mSELECT  `recipes`.* FROM `recipes` LIMIT 7 OFFSET 0[0m
+  [1m[36mUser Load (3.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 9 LIMIT 1[0m
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT COUNT(*) FROM `ingredients` WHERE `ingredients`.`recipe_id` = 1[0m
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 11 LIMIT 1[0m
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT COUNT(*) FROM `ingredients` WHERE `ingredients`.`recipe_id` = 2[0m
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 5 LIMIT 1[0m
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT COUNT(*) FROM `ingredients` WHERE `ingredients`.`recipe_id` = 3[0m
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 20 LIMIT 1[0m
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT COUNT(*) FROM `ingredients` WHERE `ingredients`.`recipe_id` = 4[0m
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 18 LIMIT 1[0m
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT COUNT(*) FROM `ingredients` WHERE `ingredients`.`recipe_id` = 5[0m
+  [1m[36mCACHE User Load (0.1ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 9 LIMIT 1[0m  [["id", 9], ["LIMIT", 1]]
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT COUNT(*) FROM `ingredients` WHERE `ingredients`.`recipe_id` = 6[0m
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `ingredients` WHERE `ingredients`.`recipe_id` = 7[0m
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT COUNT(*) FROM `recipes`[0m
+  Rendered recipes/index.html.erb within layouts/application (1192.8ms)
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendered layouts/shared/_nav.html.erb (33.9ms)
+Completed 200 OK in 2359ms (Views: 2274.7ms | ActiveRecord: 20.3ms)
+
+
+Started GET "/?page=2" for 10.0.2.2 at 2018-07-18 20:43:45 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RecipesController#index as HTML
+  Parameters: {"page"=>"2"}
+  Rendering recipes/index.html.erb within layouts/application
+  [1m[36mRecipe Load (0.8ms)[0m  [1m[34mSELECT  `recipes`.* FROM `recipes` LIMIT 7 OFFSET 7[0m
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 9 LIMIT 1[0m
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT COUNT(*) FROM `ingredients` WHERE `ingredients`.`recipe_id` = 8[0m
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 18 LIMIT 1[0m
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT COUNT(*) FROM `ingredients` WHERE `ingredients`.`recipe_id` = 9[0m
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 20 LIMIT 1[0m
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `ingredients` WHERE `ingredients`.`recipe_id` = 10[0m
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 8 LIMIT 1[0m
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT COUNT(*) FROM `ingredients` WHERE `ingredients`.`recipe_id` = 11[0m
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 8 LIMIT 1[0m  [["id", 8], ["LIMIT", 1]]
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT COUNT(*) FROM `ingredients` WHERE `ingredients`.`recipe_id` = 12[0m
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 10 LIMIT 1[0m
+  [1m[35m (25.7ms)[0m  [1m[34mSELECT COUNT(*) FROM `ingredients` WHERE `ingredients`.`recipe_id` = 13[0m
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 15 LIMIT 1[0m
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `ingredients` WHERE `ingredients`.`recipe_id` = 14[0m
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT COUNT(*) FROM `recipes`[0m
+  Rendered recipes/index.html.erb within layouts/application (1123.2ms)
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendered layouts/shared/_nav.html.erb (5.4ms)
+Completed 200 OK in 2112ms (Views: 1993.0ms | ActiveRecord: 39.3ms)
+
+
+Started GET "/?page=3" for 10.0.2.2 at 2018-07-18 20:43:52 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RecipesController#index as HTML
+  Parameters: {"page"=>"3"}
+Started GET "/?page=3" for 10.0.2.2 at 2018-07-18 20:43:52 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RecipesController#index as HTML
+  Parameters: {"page"=>"3"}
+  Rendering recipes/index.html.erb within layouts/application
+  [1m[36mRecipe Load (0.8ms)[0m  [1m[34mSELECT  `recipes`.* FROM `recipes` LIMIT 7 OFFSET 14[0m
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 19 LIMIT 1[0m
+  [1m[35m (1.5ms)[0m  [1m[34mSELECT COUNT(*) FROM `ingredients` WHERE `ingredients`.`recipe_id` = 15[0m
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 11 LIMIT 1[0m
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT COUNT(*) FROM `ingredients` WHERE `ingredients`.`recipe_id` = 16[0m
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 21 LIMIT 1[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT COUNT(*) FROM `ingredients` WHERE `ingredients`.`recipe_id` = 17[0m
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 11 LIMIT 1[0m  [["id", 11], ["LIMIT", 1]]
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `ingredients` WHERE `ingredients`.`recipe_id` = 18[0m
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 18 LIMIT 1[0m
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT COUNT(*) FROM `ingredients` WHERE `ingredients`.`recipe_id` = 19[0m
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 14 LIMIT 1[0m
+  Rendering recipes/index.html.erb within layouts/application
+  [1m[35m (0.5ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (3.4ms)[0m  [1m[34mSELECT COUNT(*) FROM `ingredients` WHERE `ingredients`.`recipe_id` = 20[0m
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 14 LIMIT 1[0m  [["id", 14], ["LIMIT", 1]]
+  [1m[36mRecipe Load (7.8ms)[0m  [1m[34mSELECT  `recipes`.* FROM `recipes` LIMIT 7 OFFSET 14[0m
+  [1m[35m (3.5ms)[0m  [1m[34mSELECT COUNT(*) FROM `ingredients` WHERE `ingredients`.`recipe_id` = 21[0m
+  [1m[36mUser Load (2.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 19 LIMIT 1[0m
+  [1m[35m (1.7ms)[0m  [1m[34mSELECT COUNT(*) FROM `recipes`[0m
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT COUNT(*) FROM `ingredients` WHERE `ingredients`.`recipe_id` = 15[0m
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 11 LIMIT 1[0m
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT COUNT(*) FROM `ingredients` WHERE `ingredients`.`recipe_id` = 16[0m
+  [1m[36mUser Load (28.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 21 LIMIT 1[0m
+  [1m[35m (1.7ms)[0m  [1m[34mSELECT COUNT(*) FROM `ingredients` WHERE `ingredients`.`recipe_id` = 17[0m
+  [1m[36mCACHE User Load (0.1ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 11 LIMIT 1[0m  [["id", 11], ["LIMIT", 1]]
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `ingredients` WHERE `ingredients`.`recipe_id` = 18[0m
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 18 LIMIT 1[0m
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `ingredients` WHERE `ingredients`.`recipe_id` = 19[0m
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 14 LIMIT 1[0m
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT COUNT(*) FROM `ingredients` WHERE `ingredients`.`recipe_id` = 20[0m
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 14 LIMIT 1[0m  [["id", 14], ["LIMIT", 1]]
+  [1m[35m (89.6ms)[0m  [1m[34mSELECT COUNT(*) FROM `ingredients` WHERE `ingredients`.`recipe_id` = 21[0m
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `recipes`[0m
+  Rendered recipes/index.html.erb within layouts/application (2487.1ms)
+  Rendered recipes/index.html.erb within layouts/application (2344.5ms)
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendered layouts/shared/_nav.html.erb (11.5ms)
+Completed 200 OK in 4127ms (Views: 3999.2ms | ActiveRecord: 21.8ms)
+
+
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendered layouts/shared/_nav.html.erb (7.5ms)
+Completed 200 OK in 3981ms (Views: 3734.8ms | ActiveRecord: 139.8ms)
+
+
+Started DELETE "/recipes/15" for 10.0.2.2 at 2018-07-18 20:44:03 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RecipesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"Ck0qRLy8GSEz4+zT4v3qUZ++gOS+Tko+Jlu0MPLDDTDmlpp6K4EzFuhMHsbwJtXxXZ2Sfq3Ngp87uz7/bXPn7A==", "id"=>"15"}
+  [1m[36mRecipe Load (0.8ms)[0m  [1m[34mSELECT  `recipes`.* FROM `recipes` WHERE `recipes`.`id` = 15 LIMIT 1[0m
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mIngredient Load (0.7ms)[0m  [1m[34mSELECT `ingredients`.* FROM `ingredients` WHERE `ingredients`.`recipe_id` = 15[0m
+  [1m[35mSQL (0.8ms)[0m  [1m[31mDELETE FROM `ingredients` WHERE `ingredients`.`id` = 52[0m
+  [1m[35mSQL (0.9ms)[0m  [1m[31mDELETE FROM `ingredients` WHERE `ingredients`.`id` = 242[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[31mDELETE FROM `ingredients` WHERE `ingredients`.`id` = 282[0m
+  [1m[35mSQL (0.8ms)[0m  [1m[31mDELETE FROM `ingredients` WHERE `ingredients`.`id` = 290[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[31mDELETE FROM `ingredients` WHERE `ingredients`.`id` = 309[0m
+  [1m[35mSQL (1.1ms)[0m  [1m[31mDELETE FROM `recipes` WHERE `recipes`.`id` = 15[0m
+  [1m[35m (58.9ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3001/recipes
+Completed 302 Found in 177ms (ActiveRecord: 66.8ms)
+
+
+Started GET "/recipes" for 10.0.2.2 at 2018-07-18 20:44:03 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RecipesController#index as HTML
+  Rendering recipes/index.html.erb within layouts/application
+  [1m[36mRecipe Load (1.4ms)[0m  [1m[34mSELECT  `recipes`.* FROM `recipes` LIMIT 7 OFFSET 0[0m
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 9 LIMIT 1[0m
+  [1m[35m (1.5ms)[0m  [1m[34mSELECT COUNT(*) FROM `ingredients` WHERE `ingredients`.`recipe_id` = 1[0m
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 11 LIMIT 1[0m
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT COUNT(*) FROM `ingredients` WHERE `ingredients`.`recipe_id` = 2[0m
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 5 LIMIT 1[0m
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT COUNT(*) FROM `ingredients` WHERE `ingredients`.`recipe_id` = 3[0m
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 20 LIMIT 1[0m
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT COUNT(*) FROM `ingredients` WHERE `ingredients`.`recipe_id` = 4[0m
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 18 LIMIT 1[0m
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT COUNT(*) FROM `ingredients` WHERE `ingredients`.`recipe_id` = 5[0m
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 9 LIMIT 1[0m  [["id", 9], ["LIMIT", 1]]
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT COUNT(*) FROM `ingredients` WHERE `ingredients`.`recipe_id` = 6[0m
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `ingredients` WHERE `ingredients`.`recipe_id` = 7[0m
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT COUNT(*) FROM `recipes`[0m
+  Rendered recipes/index.html.erb within layouts/application (903.3ms)
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendered layouts/shared/_nav.html.erb (8.9ms)
+Completed 200 OK in 1833ms (Views: 1756.3ms | ActiveRecord: 17.7ms)
+
+
+Started GET "/recipes/new" for 10.0.2.2 at 2018-07-18 20:51:54 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.5ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by RecipesController#new as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering recipes/new.html.erb within layouts/application
+  Rendered recipes/_ingredient_fields.html.erb (3.1ms)
+  Rendered recipes/_form.html.erb (13336.2ms)
+  Rendered recipes/new.html.erb within layouts/application (13435.0ms)
+  Rendered layouts/shared/_nav.html.erb (4.5ms)
+Completed 200 OK in 20267ms (Views: 19655.3ms | ActiveRecord: 34.6ms)
+
+
+Started GET "/" for 10.0.2.2 at 2018-07-18 20:52:55 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RecipesController#index as HTML
+  Rendering recipes/index.html.erb within layouts/application
+  [1m[36mRecipe Load (1.0ms)[0m  [1m[34mSELECT  `recipes`.* FROM `recipes` LIMIT 7 OFFSET 0[0m
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 9 LIMIT 1[0m
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT COUNT(*) FROM `ingredients` WHERE `ingredients`.`recipe_id` = 1[0m
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 11 LIMIT 1[0m
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `ingredients` WHERE `ingredients`.`recipe_id` = 2[0m
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 5 LIMIT 1[0m
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT COUNT(*) FROM `ingredients` WHERE `ingredients`.`recipe_id` = 3[0m
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 20 LIMIT 1[0m
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT COUNT(*) FROM `ingredients` WHERE `ingredients`.`recipe_id` = 4[0m
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 18 LIMIT 1[0m
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT COUNT(*) FROM `ingredients` WHERE `ingredients`.`recipe_id` = 5[0m
+  [1m[36mCACHE User Load (0.1ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 9 LIMIT 1[0m  [["id", 9], ["LIMIT", 1]]
+  [1m[35m (26.7ms)[0m  [1m[34mSELECT COUNT(*) FROM `ingredients` WHERE `ingredients`.`recipe_id` = 6[0m
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `ingredients` WHERE `ingredients`.`recipe_id` = 7[0m
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT COUNT(*) FROM `recipes`[0m
+  Rendered recipes/index.html.erb within layouts/application (1017.4ms)
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendered layouts/shared/_nav.html.erb (9.5ms)
+Completed 200 OK in 2079ms (Views: 1937.1ms | ActiveRecord: 41.7ms)
+
+
+Started GET "/recipes/1/edit" for 10.0.2.2 at 2018-07-18 20:53:00 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RecipesController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mRecipe Load (1.0ms)[0m  [1m[34mSELECT  `recipes`.* FROM `recipes` WHERE `recipes`.`id` = 1 LIMIT 1[0m
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering recipes/edit.html.erb within layouts/application
+  [1m[36mIngredient Load (1.3ms)[0m  [1m[34mSELECT `ingredients`.* FROM `ingredients` WHERE `ingredients`.`recipe_id` = 1[0m
+  Rendered recipes/_ingredient_fields.html.erb (3.4ms)
+  Rendered recipes/_ingredient_fields.html.erb (26.3ms)
+  Rendered recipes/_ingredient_fields.html.erb (2.0ms)
+  Rendered recipes/_ingredient_fields.html.erb (1.5ms)
+  Rendered recipes/_ingredient_fields.html.erb (4.4ms)
+  Rendered recipes/_form.html.erb (524.4ms)
+  Rendered recipes/edit.html.erb within layouts/application (617.6ms)
+  Rendered layouts/shared/_nav.html.erb (2.9ms)
+Completed 200 OK in 1689ms (Views: 1590.8ms | ActiveRecord: 3.3ms)
+
+
+Started GET "/recipes" for 10.0.2.2 at 2018-07-18 20:55:43 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (1.0ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by RecipesController#index as HTML
+  Rendering recipes/index.html.erb within layouts/application
+  [1m[36mRecipe Load (25.7ms)[0m  [1m[34mSELECT  `recipes`.* FROM `recipes` LIMIT 7 OFFSET 0[0m
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 9 LIMIT 1[0m
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT COUNT(*) FROM `ingredients` WHERE `ingredients`.`recipe_id` = 1[0m
+Started GET "/recipes/2" for 10.0.2.2 at 2018-07-18 20:55:46 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RecipesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35m (0.9ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[36mRecipe Load (1.1ms)[0m  [1m[34mSELECT  `recipes`.* FROM `recipes` WHERE `recipes`.`id` = 2 LIMIT 1[0m
+  Rendering recipes/show.html.erb within layouts/application
+  [1m[36mUser Load (47.8ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 11 LIMIT 1[0m
+  [1m[36mIngredient Load (4.8ms)[0m  [1m[34mSELECT `ingredients`.* FROM `ingredients` WHERE `ingredients`.`recipe_id` = 2[0m
+  [1m[36mUser Load (28.1ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 11 LIMIT 1[0m
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT COUNT(*) FROM `ingredients` WHERE `ingredients`.`recipe_id` = 2[0m
+  [1m[36mUser Load (40.7ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 5 LIMIT 1[0m
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT COUNT(*) FROM `ingredients` WHERE `ingredients`.`recipe_id` = 3[0m
+  [1m[36mUser Load (74.2ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 20 LIMIT 1[0m
+  [1m[35m (14.3ms)[0m  [1m[34mSELECT COUNT(*) FROM `ingredients` WHERE `ingredients`.`recipe_id` = 4[0m
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 18 LIMIT 1[0m
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `ingredients` WHERE `ingredients`.`recipe_id` = 5[0m
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 9 LIMIT 1[0m  [["id", 9], ["LIMIT", 1]]
+  [1m[35m (6.6ms)[0m  [1m[34mSELECT COUNT(*) FROM `ingredients` WHERE `ingredients`.`recipe_id` = 6[0m
+  [1m[36mUser Load (33.8ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT COUNT(*) FROM `ingredients` WHERE `ingredients`.`recipe_id` = 7[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT COUNT(*) FROM `recipes`[0m
+  Rendered recipes/show.html.erb within layouts/application (22516.1ms)
+  Rendered recipes/index.html.erb within layouts/application (26589.5ms)
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendered layouts/shared/_nav.html.erb (38.7ms)
+  Rendered layouts/shared/_nav.html.erb (34.6ms)
+Completed 200 OK in 31923ms (Views: 31559.1ms | ActiveRecord: 75.9ms)
+
+
+Completed 200 OK in 34353ms (Views: 33797.3ms | ActiveRecord: 239.0ms)
+
+
+Started GET "/recipes/2/edit" for 10.0.2.2 at 2018-07-18 20:57:31 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RecipesController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mRecipe Load (1.3ms)[0m  [1m[34mSELECT  `recipes`.* FROM `recipes` WHERE `recipes`.`id` = 2 LIMIT 1[0m
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering recipes/edit.html.erb within layouts/application
+  [1m[36mIngredient Load (1.2ms)[0m  [1m[34mSELECT `ingredients`.* FROM `ingredients` WHERE `ingredients`.`recipe_id` = 2[0m
+  Rendered recipes/_ingredient_fields.html.erb (3.1ms)
+  Rendered recipes/_ingredient_fields.html.erb (26.0ms)
+  Rendered recipes/_ingredient_fields.html.erb (2.0ms)
+  Rendered recipes/_ingredient_fields.html.erb (1.3ms)
+  Rendered recipes/_ingredient_fields.html.erb (1.3ms)
+  Rendered recipes/_ingredient_fields.html.erb (26.7ms)
+  Rendered recipes/_ingredient_fields.html.erb (26.1ms)
+  Rendered recipes/_form.html.erb (870.3ms)
+  Rendered recipes/edit.html.erb within layouts/application (1003.6ms)
+  Rendered layouts/shared/_nav.html.erb (27.2ms)
+Completed 200 OK in 2109ms (Views: 1965.8ms | ActiveRecord: 3.5ms)
+
+
+Started GET "/recipes/2" for 10.0.2.2 at 2018-07-18 20:58:04 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RecipesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mRecipe Load (1.0ms)[0m  [1m[34mSELECT  `recipes`.* FROM `recipes` WHERE `recipes`.`id` = 2 LIMIT 1[0m
+  Rendering recipes/show.html.erb within layouts/application
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 11 LIMIT 1[0m
+  [1m[36mIngredient Load (1.0ms)[0m  [1m[34mSELECT `ingredients`.* FROM `ingredients` WHERE `ingredients`.`recipe_id` = 2[0m
+  Rendered recipes/show.html.erb within layouts/application (15.6ms)
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendered layouts/shared/_nav.html.erb (34.8ms)
+Completed 200 OK in 1101ms (Views: 998.5ms | ActiveRecord: 3.5ms)
+
+
+Started GET "/recipes/2/edit" for 10.0.2.2 at 2018-07-18 20:58:07 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RecipesController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mRecipe Load (1.4ms)[0m  [1m[34mSELECT  `recipes`.* FROM `recipes` WHERE `recipes`.`id` = 2 LIMIT 1[0m
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering recipes/edit.html.erb within layouts/application
+  [1m[36mIngredient Load (1.1ms)[0m  [1m[34mSELECT `ingredients`.* FROM `ingredients` WHERE `ingredients`.`recipe_id` = 2[0m
+  Rendered recipes/_ingredient_fields.html.erb (2.8ms)
+  Rendered recipes/_ingredient_fields.html.erb (1.3ms)
+  Rendered recipes/_ingredient_fields.html.erb (26.7ms)
+  Rendered recipes/_ingredient_fields.html.erb (1.3ms)
+  Rendered recipes/_ingredient_fields.html.erb (1.3ms)
+  Rendered recipes/_ingredient_fields.html.erb (1.0ms)
+  Rendered recipes/_ingredient_fields.html.erb (2.7ms)
+  Rendered recipes/_form.html.erb (679.3ms)
+  Rendered recipes/edit.html.erb within layouts/application (768.0ms)
+  Rendered layouts/shared/_nav.html.erb (2.9ms)
+Completed 200 OK in 1911ms (Views: 1777.1ms | ActiveRecord: 3.1ms)
+
+
+Started GET "/recipes/new" for 10.0.2.2 at 2018-07-18 21:00:51 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RecipesController#new as HTML
+  [1m[36mUser Load (1.7ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering recipes/new.html.erb within layouts/application
+  Rendered recipes/_ingredient_fields.html.erb (1.6ms)
+  Rendered recipes/_form.html.erb (137.5ms)
+  Rendered recipes/new.html.erb within layouts/application (203.3ms)
+  Rendered layouts/shared/_nav.html.erb (3.8ms)
+Completed 200 OK in 1402ms (Views: 1304.3ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/" for 10.0.2.2 at 2018-07-18 21:12:56 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.9ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by RecipesController#index as HTML
+  Rendering recipes/index.html.erb within layouts/application
+  [1m[36mRecipe Load (0.6ms)[0m  [1m[34mSELECT  `recipes`.* FROM `recipes` LIMIT 7 OFFSET 0[0m
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 9 LIMIT 1[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT COUNT(*) FROM `ingredients` WHERE `ingredients`.`recipe_id` = 1[0m
+Started GET "/recipes/5/edit" for 10.0.2.2 at 2018-07-18 21:12:59 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RecipesController#edit as HTML
+  Parameters: {"id"=>"5"}
+  [1m[35m (43.4ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[36mRecipe Load (51.5ms)[0m  [1m[34mSELECT  `recipes`.* FROM `recipes` WHERE `recipes`.`id` = 5 LIMIT 1[0m
+  [1m[36mUser Load (79.2ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 11 LIMIT 1[0m
+  [1m[36mUser Load (8.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35m (3.3ms)[0m  [1m[34mSELECT COUNT(*) FROM `ingredients` WHERE `ingredients`.`recipe_id` = 2[0m
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 5 LIMIT 1[0m
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT COUNT(*) FROM `ingredients` WHERE `ingredients`.`recipe_id` = 3[0m
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 20 LIMIT 1[0m
+  [1m[35m (96.7ms)[0m  [1m[34mSELECT COUNT(*) FROM `ingredients` WHERE `ingredients`.`recipe_id` = 4[0m
+  [1m[36mUser Load (101.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 18 LIMIT 1[0m
+  [1m[35m (1.8ms)[0m  [1m[34mSELECT COUNT(*) FROM `ingredients` WHERE `ingredients`.`recipe_id` = 5[0m
+  [1m[36mCACHE User Load (0.1ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 9 LIMIT 1[0m  [["id", 9], ["LIMIT", 1]]
+  [1m[35m (3.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `ingredients` WHERE `ingredients`.`recipe_id` = 6[0m
+  Rendering recipes/edit.html.erb within layouts/application
+  [1m[36mUser Load (4.2ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  [1m[35m (39.8ms)[0m  [1m[34mSELECT COUNT(*) FROM `ingredients` WHERE `ingredients`.`recipe_id` = 7[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT COUNT(*) FROM `recipes`[0m
+  [1m[36mIngredient Load (2.6ms)[0m  [1m[34mSELECT `ingredients`.* FROM `ingredients` WHERE `ingredients`.`recipe_id` = 5[0m
+  Rendered recipes/_ingredient_fields.html.erb (1.3ms)
+  Rendered recipes/_form.html.erb (1013.4ms)
+  Rendered recipes/edit.html.erb within layouts/application (1142.1ms)
+Completed 500 Internal Server Error in 12136ms (ActiveRecord: 108.4ms)
+
+
+  
+SyntaxError (/vagrant/witchkitchen/app/views/recipes/_ingredient_fields.html.erb:17: syntax error, unexpected ')', expecting keyword_end
+..._class: 'my-wrapper-class' }) );@output_buffer.safe_append='
+...                              ^):
+  
+app/views/recipes/_ingredient_fields.html.erb:17: syntax error, unexpected ')', expecting keyword_end
+app/views/recipes/_form.html.erb:22:in `block (2 levels) in _app_views_recipes__form_html_erb___4084359917726540612_70020121557120'
+app/views/recipes/_form.html.erb:21:in `block in _app_views_recipes__form_html_erb___4084359917726540612_70020121557120'
+app/views/recipes/_form.html.erb:1:in `_app_views_recipes__form_html_erb___4084359917726540612_70020121557120'
+app/views/recipes/edit.html.erb:4:in `_app_views_recipes_edit_html_erb__897086990609968391_70020128976900'
+  Rendered recipes/index.html.erb within layouts/application (15029.9ms)
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendered layouts/shared/_nav.html.erb (38.1ms)
+Completed 200 OK in 23707ms (Views: 23032.4ms | ActiveRecord: 347.2ms)
+
+
+Started GET "/recipes/5/edit" for 10.0.2.2 at 2018-07-18 21:14:36 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RecipesController#edit as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mRecipe Load (1.0ms)[0m  [1m[34mSELECT  `recipes`.* FROM `recipes` WHERE `recipes`.`id` = 5 LIMIT 1[0m
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering recipes/edit.html.erb within layouts/application
+  [1m[36mIngredient Load (0.5ms)[0m  [1m[34mSELECT `ingredients`.* FROM `ingredients` WHERE `ingredients`.`recipe_id` = 5[0m
+  Rendered recipes/_ingredient_fields.html.erb (2.3ms)
+  Rendered recipes/_form.html.erb (133.4ms)
+  Rendered recipes/edit.html.erb within layouts/application (195.9ms)
+Completed 500 Internal Server Error in 452ms (ActiveRecord: 2.6ms)
+
+
+  
+SyntaxError (/vagrant/witchkitchen/app/views/recipes/_ingredient_fields.html.erb:17: syntax error, unexpected ')', expecting keyword_end
+...apper_class: 'ingrediente' }) );@output_buffer.safe_append='
+...                              ^):
+  
+app/views/recipes/_ingredient_fields.html.erb:17: syntax error, unexpected ')', expecting keyword_end
+app/views/recipes/_form.html.erb:22:in `block (2 levels) in _app_views_recipes__form_html_erb___4084359917726540612_70020180847180'
+app/views/recipes/_form.html.erb:21:in `block in _app_views_recipes__form_html_erb___4084359917726540612_70020180847180'
+app/views/recipes/_form.html.erb:1:in `_app_views_recipes__form_html_erb___4084359917726540612_70020180847180'
+app/views/recipes/edit.html.erb:4:in `_app_views_recipes_edit_html_erb__897086990609968391_70020180804420'
+Started GET "/recipes/" for 10.0.2.2 at 2018-07-18 21:17:05 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.8ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by RecipesController#index as HTML
+  Rendering recipes/index.html.erb within layouts/application
+  [1m[36mRecipe Load (1.1ms)[0m  [1m[34mSELECT  `recipes`.* FROM `recipes` LIMIT 7 OFFSET 0[0m
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 9 LIMIT 1[0m
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `ingredients` WHERE `ingredients`.`recipe_id` = 1[0m
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 11 LIMIT 1[0m
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `ingredients` WHERE `ingredients`.`recipe_id` = 2[0m
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 5 LIMIT 1[0m
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `ingredients` WHERE `ingredients`.`recipe_id` = 3[0m
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 20 LIMIT 1[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT COUNT(*) FROM `ingredients` WHERE `ingredients`.`recipe_id` = 4[0m
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 18 LIMIT 1[0m
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT COUNT(*) FROM `ingredients` WHERE `ingredients`.`recipe_id` = 5[0m
+  [1m[36mCACHE User Load (0.1ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 9 LIMIT 1[0m  [["id", 9], ["LIMIT", 1]]
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT COUNT(*) FROM `ingredients` WHERE `ingredients`.`recipe_id` = 6[0m
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT COUNT(*) FROM `ingredients` WHERE `ingredients`.`recipe_id` = 7[0m
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT COUNT(*) FROM `recipes`[0m
+  Rendered recipes/index.html.erb within layouts/application (10944.8ms)
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendered layouts/shared/_nav.html.erb (10.1ms)
+Completed 200 OK in 15859ms (Views: 15580.1ms | ActiveRecord: 21.8ms)
+
+
+Started GET "/recipes/4/edit" for 10.0.2.2 at 2018-07-18 21:17:25 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RecipesController#edit as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mRecipe Load (0.9ms)[0m  [1m[34mSELECT  `recipes`.* FROM `recipes` WHERE `recipes`.`id` = 4 LIMIT 1[0m
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering recipes/edit.html.erb within layouts/application
+  [1m[36mIngredient Load (1.0ms)[0m  [1m[34mSELECT `ingredients`.* FROM `ingredients` WHERE `ingredients`.`recipe_id` = 4[0m
+  Rendered recipes/_ingredient_fields.html.erb (2.3ms)
+  Rendered recipes/_form.html.erb (339.6ms)
+  Rendered recipes/edit.html.erb within layouts/application (419.8ms)
+Completed 500 Internal Server Error in 655ms (ActiveRecord: 3.8ms)
+
+
+  
+SyntaxError (/vagrant/witchkitchen/app/views/recipes/_ingredient_fields.html.erb:17: syntax error, unexpected ')', expecting keyword_end
+...apper_class: 'ingrediente' }) );@output_buffer.safe_append='
+...                              ^):
+  
+app/views/recipes/_ingredient_fields.html.erb:17: syntax error, unexpected ')', expecting keyword_end
+app/views/recipes/_form.html.erb:22:in `block (2 levels) in _app_views_recipes__form_html_erb___856671547789486987_69837477090640'
+app/views/recipes/_form.html.erb:21:in `block in _app_views_recipes__form_html_erb___856671547789486987_69837477090640'
+app/views/recipes/_form.html.erb:1:in `_app_views_recipes__form_html_erb___856671547789486987_69837477090640'
+app/views/recipes/edit.html.erb:4:in `_app_views_recipes_edit_html_erb__2236749026045018981_69837477051480'
+Started GET "/recipes/2/edit" for 10.0.2.2 at 2018-07-18 21:18:04 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RecipesController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mRecipe Load (1.1ms)[0m  [1m[34mSELECT  `recipes`.* FROM `recipes` WHERE `recipes`.`id` = 2 LIMIT 1[0m
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering recipes/edit.html.erb within layouts/application
+  [1m[36mIngredient Load (1.0ms)[0m  [1m[34mSELECT `ingredients`.* FROM `ingredients` WHERE `ingredients`.`recipe_id` = 2[0m
+  Rendered recipes/_ingredient_fields.html.erb (2.7ms)
+  Rendered recipes/_form.html.erb (98.9ms)
+  Rendered recipes/edit.html.erb within layouts/application (196.0ms)
+Completed 500 Internal Server Error in 528ms (ActiveRecord: 3.7ms)
+
+
+  
+SyntaxError (/vagrant/witchkitchen/app/views/recipes/_ingredient_fields.html.erb:17: syntax error, unexpected ')', expecting keyword_end
+...apper_class: 'ingrediente' }) );@output_buffer.safe_append='
+...                              ^):
+  
+app/views/recipes/_ingredient_fields.html.erb:17: syntax error, unexpected ')', expecting keyword_end
+app/views/recipes/_form.html.erb:22:in `block (2 levels) in _app_views_recipes__form_html_erb___856671547789486987_69837668157040'
+app/views/recipes/_form.html.erb:21:in `block in _app_views_recipes__form_html_erb___856671547789486987_69837668157040'
+app/views/recipes/_form.html.erb:1:in `_app_views_recipes__form_html_erb___856671547789486987_69837668157040'
+app/views/recipes/edit.html.erb:4:in `_app_views_recipes_edit_html_erb__2236749026045018981_69837667759940'
+Started GET "/recipes/2/edit" for 10.0.2.2 at 2018-07-18 21:18:44 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RecipesController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mRecipe Load (0.8ms)[0m  [1m[34mSELECT  `recipes`.* FROM `recipes` WHERE `recipes`.`id` = 2 LIMIT 1[0m
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering recipes/edit.html.erb within layouts/application
+  [1m[36mIngredient Load (1.4ms)[0m  [1m[34mSELECT `ingredients`.* FROM `ingredients` WHERE `ingredients`.`recipe_id` = 2[0m
+  Rendered recipes/_ingredient_fields.html.erb (1.5ms)
+  Rendered recipes/_ingredient_fields.html.erb (27.0ms)
+  Rendered recipes/_ingredient_fields.html.erb (2.2ms)
+  Rendered recipes/_ingredient_fields.html.erb (26.7ms)
+  Rendered recipes/_ingredient_fields.html.erb (26.9ms)
+  Rendered recipes/_ingredient_fields.html.erb (1.8ms)
+  Rendered recipes/_ingredient_fields.html.erb (2.9ms)
+  Rendered recipes/_form.html.erb (761.0ms)
+  Rendered recipes/edit.html.erb within layouts/application (853.8ms)
+  Rendered layouts/shared/_nav.html.erb (1.3ms)
+Completed 200 OK in 1795ms (Views: 1723.3ms | ActiveRecord: 3.2ms)
+
+
+Started GET "/recipes/new" for 10.0.2.2 at 2018-07-18 21:19:06 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RecipesController#new as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering recipes/new.html.erb within layouts/application
+  Rendered recipes/_ingredient_fields.html.erb (2.9ms)
+  Rendered recipes/_form.html.erb (110.2ms)
+  Rendered recipes/new.html.erb within layouts/application (191.3ms)
+  Rendered layouts/shared/_nav.html.erb (30.0ms)
+Completed 200 OK in 1279ms (Views: 1183.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/recipes/new" for 10.0.2.2 at 2018-07-18 21:20:27 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (1.1ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by RecipesController#new as HTML
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering recipes/new.html.erb within layouts/application
+  Rendered recipes/_ingredient_fields.html.erb (3.2ms)
+  Rendered recipes/_form.html.erb (11482.3ms)
+  Rendered recipes/new.html.erb within layouts/application (11586.7ms)
+  Rendered layouts/shared/_nav.html.erb (1.3ms)
+Completed 200 OK in 17471ms (Views: 16848.7ms | ActiveRecord: 10.7ms)
+
+
+Started GET "/" for 10.0.2.2 at 2018-07-18 21:21:05 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RecipesController#index as HTML
+  Rendering recipes/index.html.erb within layouts/application
+  [1m[36mRecipe Load (1.0ms)[0m  [1m[34mSELECT  `recipes`.* FROM `recipes` LIMIT 7 OFFSET 0[0m
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 9 LIMIT 1[0m
+  [1m[35m (26.6ms)[0m  [1m[34mSELECT COUNT(*) FROM `ingredients` WHERE `ingredients`.`recipe_id` = 1[0m
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 11 LIMIT 1[0m
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT COUNT(*) FROM `ingredients` WHERE `ingredients`.`recipe_id` = 2[0m
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 5 LIMIT 1[0m
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT COUNT(*) FROM `ingredients` WHERE `ingredients`.`recipe_id` = 3[0m
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 20 LIMIT 1[0m
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `ingredients` WHERE `ingredients`.`recipe_id` = 4[0m
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 18 LIMIT 1[0m
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `ingredients` WHERE `ingredients`.`recipe_id` = 5[0m
+  [1m[36mCACHE User Load (0.1ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 9 LIMIT 1[0m  [["id", 9], ["LIMIT", 1]]
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM `ingredients` WHERE `ingredients`.`recipe_id` = 6[0m
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `ingredients` WHERE `ingredients`.`recipe_id` = 7[0m
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT COUNT(*) FROM `recipes`[0m
+  Rendered recipes/index.html.erb within layouts/application (993.5ms)
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendered layouts/shared/_nav.html.erb (8.5ms)
+Completed 200 OK in 1973ms (Views: 1871.1ms | ActiveRecord: 40.8ms)
+
+
+Started GET "/recipes/7/edit" for 10.0.2.2 at 2018-07-18 21:21:11 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RecipesController#edit as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mRecipe Load (0.9ms)[0m  [1m[34mSELECT  `recipes`.* FROM `recipes` WHERE `recipes`.`id` = 7 LIMIT 1[0m
+  [1m[36mUser Load (2.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering recipes/edit.html.erb within layouts/application
+  [1m[36mIngredient Load (1.1ms)[0m  [1m[34mSELECT `ingredients`.* FROM `ingredients` WHERE `ingredients`.`recipe_id` = 7[0m
+  Rendered recipes/_ingredient_fields.html.erb (3.4ms)
+  Rendered recipes/_ingredient_fields.html.erb (1.5ms)
+  Rendered recipes/_ingredient_fields.html.erb (1.5ms)
+  Rendered recipes/_ingredient_fields.html.erb (26.6ms)
+  Rendered recipes/_ingredient_fields.html.erb (1.7ms)
+  Rendered recipes/_ingredient_fields.html.erb (1.9ms)
+  Rendered recipes/_ingredient_fields.html.erb (2.7ms)
+  Rendered recipes/_ingredient_fields.html.erb (3.2ms)
+  Rendered recipes/_form.html.erb (766.1ms)
+  Rendered recipes/edit.html.erb within layouts/application (830.5ms)
+  Rendered layouts/shared/_nav.html.erb (4.7ms)
+Completed 200 OK in 1790ms (Views: 1736.4ms | ActiveRecord: 3.9ms)
+
+
+Started GET "/recipes/7/edit" for 10.0.2.2 at 2018-07-18 21:22:15 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RecipesController#edit as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mRecipe Load (0.8ms)[0m  [1m[34mSELECT  `recipes`.* FROM `recipes` WHERE `recipes`.`id` = 7 LIMIT 1[0m
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering recipes/edit.html.erb within layouts/application
+  [1m[36mIngredient Load (1.0ms)[0m  [1m[34mSELECT `ingredients`.* FROM `ingredients` WHERE `ingredients`.`recipe_id` = 7[0m
+  Rendered recipes/_ingredient_fields.html.erb (3.4ms)
+  Rendered recipes/_ingredient_fields.html.erb (27.9ms)
+  Rendered recipes/_ingredient_fields.html.erb (1.6ms)
+  Rendered recipes/_ingredient_fields.html.erb (26.2ms)
+  Rendered recipes/_ingredient_fields.html.erb (3.0ms)
+  Rendered recipes/_ingredient_fields.html.erb (0.8ms)
+  Rendered recipes/_ingredient_fields.html.erb (1.8ms)
+  Rendered recipes/_ingredient_fields.html.erb (27.8ms)
+  Rendered recipes/_form.html.erb (816.7ms)
+  Rendered recipes/edit.html.erb within layouts/application (900.2ms)
+  Rendered layouts/shared/_nav.html.erb (2.4ms)
+Completed 200 OK in 1745ms (Views: 1687.6ms | ActiveRecord: 2.3ms)
+
+
+Started DELETE "/users/sign_out" for 10.0.2.2 at 2018-07-18 21:22:32 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"o/tVjmBXd8wxEysYs/dthmFqmAGbwFDcGnIU8iaslzhPIOWw92pd++q82Q2hLFImo0mKm4hDmH0Hkp49uRx95A=="}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3001/
+Completed 302 Found in 102ms (ActiveRecord: 1.5ms)
+
+
+Started GET "/" for 10.0.2.2 at 2018-07-18 21:22:32 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RecipesController#index as HTML
+  Rendering recipes/index.html.erb within layouts/application
+  [1m[36mRecipe Load (0.6ms)[0m  [1m[34mSELECT  `recipes`.* FROM `recipes` LIMIT 7 OFFSET 0[0m
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 9 LIMIT 1[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT COUNT(*) FROM `ingredients` WHERE `ingredients`.`recipe_id` = 1[0m
+Started GET "/recipes/new" for 10.0.2.2 at 2018-07-18 21:22:33 +0000
+  [1m[36mUser Load (5.7ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 11 LIMIT 1[0m
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT COUNT(*) FROM `ingredients` WHERE `ingredients`.`recipe_id` = 2[0m
+  [1m[36mUser Load (1.7ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 5 LIMIT 1[0m
+Processing by RecipesController#new as HTML
+  [1m[35m (73.8ms)[0m  [1m[34mSELECT COUNT(*) FROM `ingredients` WHERE `ingredients`.`recipe_id` = 3[0m
+Completed 401 Unauthorized in 51ms (ActiveRecord: 0.0ms)
+
+
+  [1m[36mUser Load (46.2ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 20 LIMIT 1[0m
+  [1m[35m (4.8ms)[0m  [1m[34mSELECT COUNT(*) FROM `ingredients` WHERE `ingredients`.`recipe_id` = 4[0m
+  [1m[36mUser Load (26.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 18 LIMIT 1[0m
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT COUNT(*) FROM `ingredients` WHERE `ingredients`.`recipe_id` = 5[0m
+Started GET "/users/sign_in" for 10.0.2.2 at 2018-07-18 21:22:33 +0000
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 9 LIMIT 1[0m  [["id", 9], ["LIMIT", 1]]
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT COUNT(*) FROM `ingredients` WHERE `ingredients`.`recipe_id` = 6[0m
+Processing by Devise::SessionsController#new as HTML
+  [1m[36mUser Load (42.2ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  [1m[35m (93.7ms)[0m  [1m[34mSELECT COUNT(*) FROM `ingredients` WHERE `ingredients`.`recipe_id` = 7[0m
+  [1m[35m (100.8ms)[0m  [1m[34mSELECT COUNT(*) FROM `recipes`[0m
+Started GET "/" for 10.0.2.2 at 2018-07-18 21:22:33 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  Rendering /home/vagrant/.rvm/gems/ruby-2.5.0/gems/devise-4.4.3/app/views/devise/sessions/new.html.erb within layouts/application
+Processing by RecipesController#index as HTML
+  Rendered /home/vagrant/.rvm/gems/ruby-2.5.0/gems/devise-4.4.3/app/views/devise/shared/_links.html.erb (32.7ms)
+  Rendered /home/vagrant/.rvm/gems/ruby-2.5.0/gems/devise-4.4.3/app/views/devise/sessions/new.html.erb within layouts/application (528.4ms)
+  Rendering recipes/index.html.erb within layouts/application
+  [1m[35m (3.7ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[36mRecipe Load (1.0ms)[0m  [1m[34mSELECT  `recipes`.* FROM `recipes` LIMIT 7 OFFSET 0[0m
+  [1m[36mUser Load (2.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 9 LIMIT 1[0m
+  [1m[35m (86.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `ingredients` WHERE `ingredients`.`recipe_id` = 1[0m
+  [1m[36mUser Load (4.6ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 11 LIMIT 1[0m
+  [1m[35m (6.3ms)[0m  [1m[34mSELECT COUNT(*) FROM `ingredients` WHERE `ingredients`.`recipe_id` = 2[0m
+  [1m[36mUser Load (99.1ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 5 LIMIT 1[0m
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT COUNT(*) FROM `ingredients` WHERE `ingredients`.`recipe_id` = 3[0m
+  [1m[36mUser Load (35.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 20 LIMIT 1[0m
+  Rendered recipes/index.html.erb within layouts/application (2401.1ms)
+  [1m[35m (4.8ms)[0m  [1m[34mSELECT COUNT(*) FROM `ingredients` WHERE `ingredients`.`recipe_id` = 4[0m
+  [1m[36mUser Load (8.8ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 18 LIMIT 1[0m
+  [1m[35m (4.5ms)[0m  [1m[34mSELECT COUNT(*) FROM `ingredients` WHERE `ingredients`.`recipe_id` = 5[0m
+  [1m[36mCACHE User Load (0.1ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 9 LIMIT 1[0m  [["id", 9], ["LIMIT", 1]]
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT COUNT(*) FROM `ingredients` WHERE `ingredients`.`recipe_id` = 6[0m
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  [1m[35m (2.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `ingredients` WHERE `ingredients`.`recipe_id` = 7[0m
+  [1m[35m (6.9ms)[0m  [1m[34mSELECT COUNT(*) FROM `recipes`[0m
+  Rendered recipes/index.html.erb within layouts/application (1640.6ms)
+  Rendered layouts/shared/_nav.html.erb (3.5ms)
+Completed 200 OK in 3791ms (Views: 3740.6ms | ActiveRecord: 0.0ms)
+
+
+  Rendered layouts/shared/_nav.html.erb (2.1ms)
+Completed 200 OK in 4889ms (Views: 4399.3ms | ActiveRecord: 400.9ms)
+
+
+  Rendered layouts/shared/_nav.html.erb (3.9ms)
+Completed 200 OK in 3792ms (Views: 3236.8ms | ActiveRecord: 269.6ms)
+
+
+Started GET "/users/sign_in" for 10.0.2.2 at 2018-07-18 21:22:42 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  Rendering /home/vagrant/.rvm/gems/ruby-2.5.0/gems/devise-4.4.3/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /home/vagrant/.rvm/gems/ruby-2.5.0/gems/devise-4.4.3/app/views/devise/shared/_links.html.erb (3.9ms)
+  Rendered /home/vagrant/.rvm/gems/ruby-2.5.0/gems/devise-4.4.3/app/views/devise/sessions/new.html.erb within layouts/application (69.3ms)
+  Rendered layouts/shared/_nav.html.erb (5.0ms)
+Completed 200 OK in 1112ms (Views: 1108.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 10.0.2.2 at 2018-07-18 21:22:52 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"d+aY1gKLesfsoMOxzlNwtS9jQcqhQspiH6e41ZiLf1mhNN39YnokEdy4ZgL+Cnk0TSgXGuINwM7ONdWCfhVMrg==", "user"=>{"email"=>"teste@email.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (1.7ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`email` = 'teste@email.com' ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.6ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[33mUPDATE `users` SET `current_sign_in_at` = '2018-07-18 21:22:54', `last_sign_in_at` = '2018-07-18 20:15:10', `sign_in_count` = 7, `updated_at` = '2018-07-18 21:22:54' WHERE `users`.`id` = 1[0m
+  [1m[35m (37.1ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3001/recipes/new
+Completed 302 Found in 1460ms (ActiveRecord: 39.8ms)
+
+
+Started GET "/recipes/new" for 10.0.2.2 at 2018-07-18 21:22:54 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RecipesController#new as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering recipes/new.html.erb within layouts/application
+  Rendered recipes/_ingredient_fields.html.erb (3.2ms)
+  Rendered recipes/_form.html.erb (72.5ms)
+  Rendered recipes/new.html.erb within layouts/application (181.7ms)
+  Rendered layouts/shared/_nav.html.erb (3.1ms)
+Completed 200 OK in 1070ms (Views: 980.1ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for 10.0.2.2 at 2018-07-18 21:23:02 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RecipesController#index as HTML
+  Rendering recipes/index.html.erb within layouts/application
+  [1m[36mRecipe Load (1.2ms)[0m  [1m[34mSELECT  `recipes`.* FROM `recipes` LIMIT 7 OFFSET 0[0m
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 9 LIMIT 1[0m
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT COUNT(*) FROM `ingredients` WHERE `ingredients`.`recipe_id` = 1[0m
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 11 LIMIT 1[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT COUNT(*) FROM `ingredients` WHERE `ingredients`.`recipe_id` = 2[0m
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 5 LIMIT 1[0m
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT COUNT(*) FROM `ingredients` WHERE `ingredients`.`recipe_id` = 3[0m
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 20 LIMIT 1[0m
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT COUNT(*) FROM `ingredients` WHERE `ingredients`.`recipe_id` = 4[0m
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 18 LIMIT 1[0m
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `ingredients` WHERE `ingredients`.`recipe_id` = 5[0m
+  [1m[36mCACHE User Load (0.1ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 9 LIMIT 1[0m  [["id", 9], ["LIMIT", 1]]
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT COUNT(*) FROM `ingredients` WHERE `ingredients`.`recipe_id` = 6[0m
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  [1m[35m (25.4ms)[0m  [1m[34mSELECT COUNT(*) FROM `ingredients` WHERE `ingredients`.`recipe_id` = 7[0m
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT COUNT(*) FROM `recipes`[0m
+  Rendered recipes/index.html.erb within layouts/application (1014.3ms)
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendered layouts/shared/_nav.html.erb (8.5ms)
+Completed 200 OK in 1930ms (Views: 1823.7ms | ActiveRecord: 41.3ms)
+
+
+Started GET "/recipes/2/edit" for 10.0.2.2 at 2018-07-18 21:23:07 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RecipesController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mRecipe Load (1.5ms)[0m  [1m[34mSELECT  `recipes`.* FROM `recipes` WHERE `recipes`.`id` = 2 LIMIT 1[0m
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering recipes/edit.html.erb within layouts/application
+  [1m[36mIngredient Load (1.2ms)[0m  [1m[34mSELECT `ingredients`.* FROM `ingredients` WHERE `ingredients`.`recipe_id` = 2[0m
+  Rendered recipes/_ingredient_fields.html.erb (3.0ms)
+  Rendered recipes/_ingredient_fields.html.erb (1.7ms)
+  Rendered recipes/_ingredient_fields.html.erb (1.8ms)
+  Rendered recipes/_ingredient_fields.html.erb (1.5ms)
+  Rendered recipes/_ingredient_fields.html.erb (2.5ms)
+  Rendered recipes/_ingredient_fields.html.erb (2.2ms)
+  Rendered recipes/_ingredient_fields.html.erb (3.0ms)
+  Rendered recipes/_form.html.erb (716.7ms)
+  Rendered recipes/edit.html.erb within layouts/application (776.7ms)
+  Rendered layouts/shared/_nav.html.erb (3.7ms)
+Completed 200 OK in 1770ms (Views: 1634.6ms | ActiveRecord: 3.6ms)
+
+
+Started GET "/recipes" for 10.0.2.2 at 2018-07-18 21:23:53 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RecipesController#index as HTML
+  Rendering recipes/index.html.erb within layouts/application
+  [1m[36mRecipe Load (25.9ms)[0m  [1m[34mSELECT  `recipes`.* FROM `recipes` LIMIT 7 OFFSET 0[0m
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 9 LIMIT 1[0m
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT COUNT(*) FROM `ingredients` WHERE `ingredients`.`recipe_id` = 1[0m
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 11 LIMIT 1[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM `ingredients` WHERE `ingredients`.`recipe_id` = 2[0m
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 5 LIMIT 1[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM `ingredients` WHERE `ingredients`.`recipe_id` = 3[0m
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 20 LIMIT 1[0m
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT COUNT(*) FROM `ingredients` WHERE `ingredients`.`recipe_id` = 4[0m
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 18 LIMIT 1[0m
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT COUNT(*) FROM `ingredients` WHERE `ingredients`.`recipe_id` = 5[0m
+  [1m[36mCACHE User Load (0.1ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 9 LIMIT 1[0m  [["id", 9], ["LIMIT", 1]]
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT COUNT(*) FROM `ingredients` WHERE `ingredients`.`recipe_id` = 6[0m
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT COUNT(*) FROM `ingredients` WHERE `ingredients`.`recipe_id` = 7[0m
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT COUNT(*) FROM `recipes`[0m
+  Rendered recipes/index.html.erb within layouts/application (992.3ms)
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendered layouts/shared/_nav.html.erb (12.1ms)
+Completed 200 OK in 1952ms (Views: 1878.1ms | ActiveRecord: 38.4ms)
+
+
+Started GET "/routes" for 10.0.2.2 at 2018-07-18 21:36:55 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (1.1ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  
+ActionController::RoutingError (No route matches [GET] "/routes"):
+  
+actionpack (5.1.6) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.6.2) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.6.2) lib/web_console/middleware.rb:22:in `block in call'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.6) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.6) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.6) lib/rails/engine.rb:522:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/" for 10.0.2.2 at 2018-07-18 21:37:34 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RecipesController#index as HTML
+  Rendering recipes/index.html.erb within layouts/application
+  [1m[36mRecipe Load (1.3ms)[0m  [1m[34mSELECT  `recipes`.* FROM `recipes` LIMIT 7 OFFSET 0[0m
+  [1m[36mUser Load (26.2ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 9 LIMIT 1[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM `ingredients` WHERE `ingredients`.`recipe_id` = 1[0m
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 11 LIMIT 1[0m
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT COUNT(*) FROM `ingredients` WHERE `ingredients`.`recipe_id` = 2[0m
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 5 LIMIT 1[0m
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `ingredients` WHERE `ingredients`.`recipe_id` = 3[0m
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 20 LIMIT 1[0m
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT COUNT(*) FROM `ingredients` WHERE `ingredients`.`recipe_id` = 4[0m
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 18 LIMIT 1[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT COUNT(*) FROM `ingredients` WHERE `ingredients`.`recipe_id` = 5[0m
+  [1m[36mCACHE User Load (0.1ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 9 LIMIT 1[0m  [["id", 9], ["LIMIT", 1]]
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT COUNT(*) FROM `ingredients` WHERE `ingredients`.`recipe_id` = 6[0m
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT COUNT(*) FROM `ingredients` WHERE `ingredients`.`recipe_id` = 7[0m
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT COUNT(*) FROM `recipes`[0m
+  Rendered recipes/index.html.erb within layouts/application (12617.9ms)
+  [1m[36mUser Load (26.2ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendered layouts/shared/_nav.html.erb (36.8ms)
+Completed 200 OK in 24613ms (Views: 24272.5ms | ActiveRecord: 99.9ms)
+
+
+Started GET "/" for 10.0.2.2 at 2018-07-18 21:37:59 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RecipesController#index as HTML
+  Rendering recipes/index.html.erb within layouts/application
+  [1m[36mRecipe Load (1.2ms)[0m  [1m[34mSELECT  `recipes`.* FROM `recipes` LIMIT 7 OFFSET 0[0m
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 9 LIMIT 1[0m
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT COUNT(*) FROM `ingredients` WHERE `ingredients`.`recipe_id` = 1[0m
+  [1m[36mUser Load (25.8ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 11 LIMIT 1[0m
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT COUNT(*) FROM `ingredients` WHERE `ingredients`.`recipe_id` = 2[0m
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 5 LIMIT 1[0m
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `ingredients` WHERE `ingredients`.`recipe_id` = 3[0m
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 20 LIMIT 1[0m
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT COUNT(*) FROM `ingredients` WHERE `ingredients`.`recipe_id` = 4[0m
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 18 LIMIT 1[0m
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `ingredients` WHERE `ingredients`.`recipe_id` = 5[0m
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 9 LIMIT 1[0m  [["id", 9], ["LIMIT", 1]]
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT COUNT(*) FROM `ingredients` WHERE `ingredients`.`recipe_id` = 6[0m
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT COUNT(*) FROM `ingredients` WHERE `ingredients`.`recipe_id` = 7[0m
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT COUNT(*) FROM `recipes`[0m
+  Rendered recipes/index.html.erb within layouts/application (952.5ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendered layouts/shared/_nav.html.erb (9.5ms)
+Completed 200 OK in 2042ms (Views: 1880.8ms | ActiveRecord: 40.7ms)
+
+
+Started GET "/witch/myrecipes" for 10.0.2.2 at 2018-07-18 21:38:35 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WitchController#myrecipes as HTML
+  [1m[36mUser Load (25.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering witch/myrecipes.html.erb within layouts/application
+  [1m[36mRecipe Load (1.3ms)[0m  [1m[34mSELECT `recipes`.* FROM `recipes` WHERE `recipes`.`user_id` = 1[0m
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT COUNT(*) FROM `ingredients` WHERE `ingredients`.`recipe_id` = 59[0m
+  [1m[35m (2.1ms)[0m  [1m[34mSELECT COUNT(*) FROM `ingredients` WHERE `ingredients`.`recipe_id` = 91[0m
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT COUNT(*) FROM `ingredients` WHERE `ingredients`.`recipe_id` = 101[0m
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT COUNT(*) FROM `ingredients` WHERE `ingredients`.`recipe_id` = 102[0m
+  Rendered witch/myrecipes.html.erb within layouts/application (239.9ms)
+Completed 500 Internal Server Error in 679ms (ActiveRecord: 32.4ms)
+
+
+  
+ActionView::Template::Error (undefined method `total_pages' for #<Recipe::ActiveRecord_Associations_CollectionProxy:0x00007fecc53ea968>):
+    29: </table>
+    30: 
+    31: <div style="margin: 0 30px;">
+    32:   <%= paginate(@recipes) %>
+    33: </div>
+  
+app/views/witch/myrecipes.html.erb:32:in `_app_views_witch_myrecipes_html_erb__335651326161426366_70327449111440'
+Started GET "/witch/myrecipes" for 10.0.2.2 at 2018-07-18 21:39:34 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WitchController#myrecipes as HTML
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering witch/myrecipes.html.erb within layouts/application
+  [1m[36mRecipe Load (0.9ms)[0m  [1m[34mSELECT `recipes`.* FROM `recipes` WHERE `recipes`.`user_id` = 1[0m
+  [1m[35m (25.8ms)[0m  [1m[34mSELECT COUNT(*) FROM `ingredients` WHERE `ingredients`.`recipe_id` = 59[0m
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT COUNT(*) FROM `ingredients` WHERE `ingredients`.`recipe_id` = 91[0m
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT COUNT(*) FROM `ingredients` WHERE `ingredients`.`recipe_id` = 101[0m
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `ingredients` WHERE `ingredients`.`recipe_id` = 102[0m
+  Rendered witch/myrecipes.html.erb within layouts/application (196.5ms)
+Completed 500 Internal Server Error in 535ms (ActiveRecord: 30.9ms)
+
+
+  
+ActionView::Template::Error (undefined method `total_pages' for #<Recipe::ActiveRecord_Associations_CollectionProxy:0x00007feccc3bf9a0>):
+    29: </table>
+    30: 
+    31: <div style="margin: 0 30px;">
+    32:   <%= paginate(@recipes) %>
+    33: </div>
+  
+app/views/witch/myrecipes.html.erb:32:in `_app_views_witch_myrecipes_html_erb__335651326161426366_70327507743660'
+Started GET "/witch/myrecipes" for 10.0.2.2 at 2018-07-18 21:40:14 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (1.1ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by WitchController#myrecipes as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering witch/myrecipes.html.erb within layouts/application
+  [1m[36mRecipe Load (1.1ms)[0m  [1m[34mSELECT  `recipes`.* FROM `recipes` WHERE `recipes`.`user_id` = 1 LIMIT 7 OFFSET 0[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT COUNT(*) FROM `ingredients` WHERE `ingredients`.`recipe_id` = 59[0m
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT COUNT(*) FROM `ingredients` WHERE `ingredients`.`recipe_id` = 91[0m
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT COUNT(*) FROM `ingredients` WHERE `ingredients`.`recipe_id` = 101[0m
+  [1m[35m (25.3ms)[0m  [1m[34mSELECT COUNT(*) FROM `ingredients` WHERE `ingredients`.`recipe_id` = 102[0m
+  Rendered witch/myrecipes.html.erb within layouts/application (10987.0ms)
+  Rendered layouts/shared/_nav.html.erb (32.2ms)
+Completed 200 OK in 16799ms (Views: 16047.0ms | ActiveRecord: 36.5ms)
+
+
+Started GET "/recipes/59" for 10.0.2.2 at 2018-07-18 21:40:38 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RecipesController#show as HTML
+  Parameters: {"id"=>"59"}
+  [1m[36mRecipe Load (1.2ms)[0m  [1m[34mSELECT  `recipes`.* FROM `recipes` WHERE `recipes`.`id` = 59 LIMIT 1[0m
+  Rendering recipes/show.html.erb within layouts/application
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  [1m[36mIngredient Load (1.5ms)[0m  [1m[34mSELECT `ingredients`.* FROM `ingredients` WHERE `ingredients`.`recipe_id` = 59[0m
+  Rendered recipes/show.html.erb within layouts/application (236.1ms)
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendered layouts/shared/_nav.html.erb (39.2ms)
+Completed 200 OK in 1530ms (Views: 1389.8ms | ActiveRecord: 6.3ms)
+
+
+Started GET "/recipes" for 10.0.2.2 at 2018-07-18 21:40:43 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RecipesController#index as HTML
+  Rendering recipes/index.html.erb within layouts/application
+  [1m[36mRecipe Load (0.8ms)[0m  [1m[34mSELECT  `recipes`.* FROM `recipes` LIMIT 7 OFFSET 0[0m
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 9 LIMIT 1[0m
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT COUNT(*) FROM `ingredients` WHERE `ingredients`.`recipe_id` = 1[0m
+  [1m[36mUser Load (25.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 11 LIMIT 1[0m
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT COUNT(*) FROM `ingredients` WHERE `ingredients`.`recipe_id` = 2[0m
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 5 LIMIT 1[0m
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `ingredients` WHERE `ingredients`.`recipe_id` = 3[0m
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 20 LIMIT 1[0m
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT COUNT(*) FROM `ingredients` WHERE `ingredients`.`recipe_id` = 4[0m
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 18 LIMIT 1[0m
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `ingredients` WHERE `ingredients`.`recipe_id` = 5[0m
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 9 LIMIT 1[0m  [["id", 9], ["LIMIT", 1]]
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT COUNT(*) FROM `ingredients` WHERE `ingredients`.`recipe_id` = 6[0m
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT COUNT(*) FROM `ingredients` WHERE `ingredients`.`recipe_id` = 7[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM `recipes`[0m
+  Rendered recipes/index.html.erb within layouts/application (1052.9ms)
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendered layouts/shared/_nav.html.erb (35.5ms)
+Completed 200 OK in 2257ms (Views: 2128.7ms | ActiveRecord: 40.2ms)
+
+
+Started GET "/recipes/1/edit" for 10.0.2.2 at 2018-07-18 21:40:47 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RecipesController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mRecipe Load (0.9ms)[0m  [1m[34mSELECT  `recipes`.* FROM `recipes` WHERE `recipes`.`id` = 1 LIMIT 1[0m
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering recipes/edit.html.erb within layouts/application
+  [1m[36mIngredient Load (0.5ms)[0m  [1m[34mSELECT `ingredients`.* FROM `ingredients` WHERE `ingredients`.`recipe_id` = 1[0m
+  Rendered recipes/_ingredient_fields.html.erb (2.4ms)
+  Rendered recipes/_form.html.erb (208.0ms)
+  Rendered recipes/edit.html.erb within layouts/application (319.1ms)
+Completed 500 Internal Server Error in 619ms (ActiveRecord: 2.5ms)
+
+
+  
+SyntaxError (/vagrant/witchkitchen/app/views/recipes/_ingredient_fields.html.erb:17: syntax error, unexpected ',', expecting ')'
+...ciation ("Remover ingrediente", f, { wrapper_class: 'ingredi...
+...                              ^
+/vagrant/witchkitchen/app/views/recipes/_ingredient_fields.html.erb:17: syntax error, unexpected ')', expecting &. or :: or '[' or '.'
+... wrapper_class: 'ingredient' }) );@output_buffer.safe_append...
+...                              ^
+/vagrant/witchkitchen/app/views/recipes/_ingredient_fields.html.erb:23: syntax error, unexpected keyword_ensure, expecting ')'
+          ensure
+          ^~~~~~
+/vagrant/witchkitchen/app/views/recipes/_ingredient_fields.html.erb:25: syntax error, unexpected keyword_end, expecting ')'
+          end
+          ^~~):
+  
+app/views/recipes/_ingredient_fields.html.erb:17: syntax error, unexpected ',', expecting ')'
+app/views/recipes/_ingredient_fields.html.erb:17: syntax error, unexpected ')', expecting &. or :: or '[' or '.'
+app/views/recipes/_ingredient_fields.html.erb:23: syntax error, unexpected keyword_ensure, expecting ')'
+app/views/recipes/_ingredient_fields.html.erb:25: syntax error, unexpected keyword_end, expecting ')'
+app/views/recipes/_form.html.erb:22:in `block (2 levels) in _app_views_recipes__form_html_erb__2151843023296974384_70205200190200'
+app/views/recipes/_form.html.erb:21:in `block in _app_views_recipes__form_html_erb__2151843023296974384_70205200190200'
+app/views/recipes/_form.html.erb:1:in `_app_views_recipes__form_html_erb__2151843023296974384_70205200190200'
+app/views/recipes/edit.html.erb:4:in `_app_views_recipes_edit_html_erb__2312552370869712145_70205200178640'
+Started GET "/recipes" for 10.0.2.2 at 2018-07-18 21:41:33 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RecipesController#index as HTML
+  Rendering recipes/index.html.erb within layouts/application
+  [1m[36mRecipe Load (1.1ms)[0m  [1m[34mSELECT  `recipes`.* FROM `recipes` LIMIT 7 OFFSET 0[0m
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 9 LIMIT 1[0m
+  [1m[35m (1.5ms)[0m  [1m[34mSELECT COUNT(*) FROM `ingredients` WHERE `ingredients`.`recipe_id` = 1[0m
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 11 LIMIT 1[0m
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT COUNT(*) FROM `ingredients` WHERE `ingredients`.`recipe_id` = 2[0m
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 5 LIMIT 1[0m
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT COUNT(*) FROM `ingredients` WHERE `ingredients`.`recipe_id` = 3[0m
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 20 LIMIT 1[0m
+  [1m[35m (25.8ms)[0m  [1m[34mSELECT COUNT(*) FROM `ingredients` WHERE `ingredients`.`recipe_id` = 4[0m
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 18 LIMIT 1[0m
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT COUNT(*) FROM `ingredients` WHERE `ingredients`.`recipe_id` = 5[0m
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 9 LIMIT 1[0m  [["id", 9], ["LIMIT", 1]]
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT COUNT(*) FROM `ingredients` WHERE `ingredients`.`recipe_id` = 6[0m
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT COUNT(*) FROM `ingredients` WHERE `ingredients`.`recipe_id` = 7[0m
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT COUNT(*) FROM `recipes`[0m
+  Rendered recipes/index.html.erb within layouts/application (1106.9ms)
+  [1m[36mUser Load (27.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendered layouts/shared/_nav.html.erb (37.4ms)
+Completed 200 OK in 2350ms (Views: 2137.9ms | ActiveRecord: 68.6ms)
+
+
+Started GET "/witch/myrecipes" for 10.0.2.2 at 2018-07-18 21:41:40 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WitchController#myrecipes as HTML
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering witch/myrecipes.html.erb within layouts/application
+  [1m[36mRecipe Load (1.1ms)[0m  [1m[34mSELECT  `recipes`.* FROM `recipes` WHERE `recipes`.`user_id` = 1 LIMIT 7 OFFSET 0[0m
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT COUNT(*) FROM `ingredients` WHERE `ingredients`.`recipe_id` = 59[0m
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `ingredients` WHERE `ingredients`.`recipe_id` = 91[0m
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT COUNT(*) FROM `ingredients` WHERE `ingredients`.`recipe_id` = 101[0m
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT COUNT(*) FROM `ingredients` WHERE `ingredients`.`recipe_id` = 102[0m
+  Rendered witch/myrecipes.html.erb within layouts/application (148.4ms)
+  Rendered layouts/shared/_nav.html.erb (4.0ms)
+Completed 200 OK in 1536ms (Views: 1385.3ms | ActiveRecord: 6.7ms)
+
+
+Started DELETE "/recipes/101" for 10.0.2.2 at 2018-07-18 21:41:53 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RecipesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"KFzyYzaORCkN716HXkCdqAT6YzPNheC1U8hggV58YeHxROaOTM202SQAreB7rvJ4X+MxbhdZGzufmhS5xugQlw==", "id"=>"101"}
+  [1m[36mRecipe Load (0.8ms)[0m  [1m[34mSELECT  `recipes`.* FROM `recipes` WHERE `recipes`.`id` = 101 LIMIT 1[0m
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mIngredient Load (0.6ms)[0m  [1m[34mSELECT `ingredients`.* FROM `ingredients` WHERE `ingredients`.`recipe_id` = 101[0m
+  [1m[35mSQL (1.7ms)[0m  [1m[31mDELETE FROM `recipes` WHERE `recipes`.`id` = 101[0m
+  [1m[35m (35.3ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3001/recipes
+Completed 302 Found in 85ms (ActiveRecord: 39.8ms)
+
+
+Started GET "/recipes" for 10.0.2.2 at 2018-07-18 21:41:53 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RecipesController#index as HTML
+  Rendering recipes/index.html.erb within layouts/application
+  [1m[36mRecipe Load (1.0ms)[0m  [1m[34mSELECT  `recipes`.* FROM `recipes` LIMIT 7 OFFSET 0[0m
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 9 LIMIT 1[0m
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT COUNT(*) FROM `ingredients` WHERE `ingredients`.`recipe_id` = 1[0m
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 11 LIMIT 1[0m
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT COUNT(*) FROM `ingredients` WHERE `ingredients`.`recipe_id` = 2[0m
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 5 LIMIT 1[0m
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT COUNT(*) FROM `ingredients` WHERE `ingredients`.`recipe_id` = 3[0m
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 20 LIMIT 1[0m
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT COUNT(*) FROM `ingredients` WHERE `ingredients`.`recipe_id` = 4[0m
+  [1m[36mUser Load (25.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 18 LIMIT 1[0m
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT COUNT(*) FROM `ingredients` WHERE `ingredients`.`recipe_id` = 5[0m
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 9 LIMIT 1[0m  [["id", 9], ["LIMIT", 1]]
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT COUNT(*) FROM `ingredients` WHERE `ingredients`.`recipe_id` = 6[0m
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT COUNT(*) FROM `ingredients` WHERE `ingredients`.`recipe_id` = 7[0m
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT COUNT(*) FROM `recipes`[0m
+  Rendered recipes/index.html.erb within layouts/application (865.1ms)
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendered layouts/shared/_nav.html.erb (7.2ms)
+Completed 200 OK in 1786ms (Views: 1691.0ms | ActiveRecord: 39.6ms)
+
+
+Started GET "/witch/myrecipes" for 10.0.2.2 at 2018-07-18 21:42:00 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WitchController#myrecipes as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering witch/myrecipes.html.erb within layouts/application
+  [1m[36mRecipe Load (1.0ms)[0m  [1m[34mSELECT  `recipes`.* FROM `recipes` WHERE `recipes`.`user_id` = 1 LIMIT 7 OFFSET 0[0m
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT COUNT(*) FROM `ingredients` WHERE `ingredients`.`recipe_id` = 59[0m
+  [1m[35m (28.5ms)[0m  [1m[34mSELECT COUNT(*) FROM `ingredients` WHERE `ingredients`.`recipe_id` = 91[0m
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `ingredients` WHERE `ingredients`.`recipe_id` = 102[0m
+  Rendered witch/myrecipes.html.erb within layouts/application (158.0ms)
+  Rendered layouts/shared/_nav.html.erb (6.2ms)
+Completed 200 OK in 1240ms (Views: 1122.8ms | ActiveRecord: 32.3ms)
+
+
+Started GET "/recipes/59/edit" for 10.0.2.2 at 2018-07-18 21:42:05 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RecipesController#edit as HTML
+  Parameters: {"id"=>"59"}
+  [1m[36mRecipe Load (0.8ms)[0m  [1m[34mSELECT  `recipes`.* FROM `recipes` WHERE `recipes`.`id` = 59 LIMIT 1[0m
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering recipes/edit.html.erb within layouts/application
+  [1m[36mIngredient Load (1.1ms)[0m  [1m[34mSELECT `ingredients`.* FROM `ingredients` WHERE `ingredients`.`recipe_id` = 59[0m
+  Rendered recipes/_ingredient_fields.html.erb (1.6ms)
+  Rendered recipes/_form.html.erb (91.9ms)
+  Rendered recipes/edit.html.erb within layouts/application (176.2ms)
+Completed 500 Internal Server Error in 367ms (ActiveRecord: 2.7ms)
+
+
+  
+SyntaxError (/vagrant/witchkitchen/app/views/recipes/_ingredient_fields.html.erb:17: syntax error, unexpected ',', expecting &. or :: or '[' or '.'
+...ciation ,"Remover ingrediente", f );@output_buffer.safe_appe...
+...                              ^):
+  
+app/views/recipes/_ingredient_fields.html.erb:17: syntax error, unexpected ',', expecting &. or :: or '[' or '.'
+app/views/recipes/_form.html.erb:22:in `block (2 levels) in _app_views_recipes__form_html_erb__2151843023296974384_70205206366240'
+app/views/recipes/_form.html.erb:21:in `block in _app_views_recipes__form_html_erb__2151843023296974384_70205206366240'
+app/views/recipes/_form.html.erb:1:in `_app_views_recipes__form_html_erb__2151843023296974384_70205206366240'
+app/views/recipes/edit.html.erb:4:in `_app_views_recipes_edit_html_erb__2312552370869712145_70205206412460'
+Started GET "/witch/myrecipes" for 10.0.2.2 at 2018-07-18 21:42:13 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WitchController#myrecipes as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering witch/myrecipes.html.erb within layouts/application
+  [1m[36mRecipe Load (1.0ms)[0m  [1m[34mSELECT  `recipes`.* FROM `recipes` WHERE `recipes`.`user_id` = 1 LIMIT 7 OFFSET 0[0m
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `ingredients` WHERE `ingredients`.`recipe_id` = 59[0m
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT COUNT(*) FROM `ingredients` WHERE `ingredients`.`recipe_id` = 91[0m
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT COUNT(*) FROM `ingredients` WHERE `ingredients`.`recipe_id` = 102[0m
+  Rendered witch/myrecipes.html.erb within layouts/application (139.4ms)
+  Rendered layouts/shared/_nav.html.erb (4.0ms)
+Completed 200 OK in 1161ms (Views: 1099.2ms | ActiveRecord: 4.4ms)
+
+
+Started GET "/recipes/59" for 10.0.2.2 at 2018-07-18 21:42:18 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RecipesController#show as HTML
+  Parameters: {"id"=>"59"}
+  [1m[36mRecipe Load (0.8ms)[0m  [1m[34mSELECT  `recipes`.* FROM `recipes` WHERE `recipes`.`id` = 59 LIMIT 1[0m
+  Rendering recipes/show.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  [1m[36mIngredient Load (1.3ms)[0m  [1m[34mSELECT `ingredients`.* FROM `ingredients` WHERE `ingredients`.`recipe_id` = 59[0m
+  Rendered recipes/show.html.erb within layouts/application (15.2ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendered layouts/shared/_nav.html.erb (34.5ms)
+Completed 200 OK in 981ms (Views: 922.2ms | ActiveRecord: 3.1ms)
+
+
+Started GET "/recipes/59/edit" for 10.0.2.2 at 2018-07-18 21:42:23 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RecipesController#edit as HTML
+  Parameters: {"id"=>"59"}
+  [1m[36mRecipe Load (0.8ms)[0m  [1m[34mSELECT  `recipes`.* FROM `recipes` WHERE `recipes`.`id` = 59 LIMIT 1[0m
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering recipes/edit.html.erb within layouts/application
+  [1m[36mIngredient Load (1.1ms)[0m  [1m[34mSELECT `ingredients`.* FROM `ingredients` WHERE `ingredients`.`recipe_id` = 59[0m
+  Rendered recipes/_ingredient_fields.html.erb (27.3ms)
+  Rendered recipes/_form.html.erb (94.7ms)
+  Rendered recipes/edit.html.erb within layouts/application (176.1ms)
+Completed 500 Internal Server Error in 397ms (ActiveRecord: 3.1ms)
+
+
+  
+SyntaxError (/vagrant/witchkitchen/app/views/recipes/_ingredient_fields.html.erb:17: syntax error, unexpected ',', expecting &. or :: or '[' or '.'
+...ciation ,"Remover ingrediente", f );@output_buffer.safe_appe...
+...                              ^):
+  
+app/views/recipes/_ingredient_fields.html.erb:17: syntax error, unexpected ',', expecting &. or :: or '[' or '.'
+app/views/recipes/_form.html.erb:22:in `block (2 levels) in _app_views_recipes__form_html_erb__2151843023296974384_70205208373900'
+app/views/recipes/_form.html.erb:21:in `block in _app_views_recipes__form_html_erb__2151843023296974384_70205208373900'
+app/views/recipes/_form.html.erb:1:in `_app_views_recipes__form_html_erb__2151843023296974384_70205208373900'
+app/views/recipes/edit.html.erb:4:in `_app_views_recipes_edit_html_erb__2312552370869712145_70205208446720'
+Started GET "/recipes/59" for 10.0.2.2 at 2018-07-18 21:42:29 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RecipesController#show as HTML
+  Parameters: {"id"=>"59"}
+  [1m[36mRecipe Load (1.0ms)[0m  [1m[34mSELECT  `recipes`.* FROM `recipes` WHERE `recipes`.`id` = 59 LIMIT 1[0m
+  Rendering recipes/show.html.erb within layouts/application
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  [1m[36mIngredient Load (1.5ms)[0m  [1m[34mSELECT `ingredients`.* FROM `ingredients` WHERE `ingredients`.`recipe_id` = 59[0m
+  Rendered recipes/show.html.erb within layouts/application (52.6ms)
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendered layouts/shared/_nav.html.erb (38.2ms)
+Completed 200 OK in 1146ms (Views: 1056.0ms | ActiveRecord: 4.9ms)
+
+
+Started GET "/" for 10.0.2.2 at 2018-07-18 21:44:32 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.9ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (26.6ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by RecipesController#index as HTML
+  Rendering recipes/index.html.erb within layouts/application
+  [1m[36mRecipe Load (0.9ms)[0m  [1m[34mSELECT  `recipes`.* FROM `recipes` LIMIT 7 OFFSET 0[0m
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 9 LIMIT 1[0m
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT COUNT(*) FROM `ingredients` WHERE `ingredients`.`recipe_id` = 1[0m
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 11 LIMIT 1[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT COUNT(*) FROM `ingredients` WHERE `ingredients`.`recipe_id` = 2[0m
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 5 LIMIT 1[0m
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT COUNT(*) FROM `ingredients` WHERE `ingredients`.`recipe_id` = 3[0m
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 20 LIMIT 1[0m
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `ingredients` WHERE `ingredients`.`recipe_id` = 4[0m
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 18 LIMIT 1[0m
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT COUNT(*) FROM `ingredients` WHERE `ingredients`.`recipe_id` = 5[0m
+  [1m[36mCACHE User Load (0.2ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 9 LIMIT 1[0m  [["id", 9], ["LIMIT", 1]]
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT COUNT(*) FROM `ingredients` WHERE `ingredients`.`recipe_id` = 6[0m
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `ingredients` WHERE `ingredients`.`recipe_id` = 7[0m
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT COUNT(*) FROM `recipes`[0m
+  Rendered recipes/index.html.erb within layouts/application (12486.3ms)
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendered layouts/shared/_nav.html.erb (9.2ms)
+Completed 200 OK in 18201ms (Views: 17901.1ms | ActiveRecord: 23.9ms)
+
+
+Started GET "/recipes/7/edit" for 10.0.2.2 at 2018-07-18 21:45:01 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RecipesController#edit as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mRecipe Load (0.9ms)[0m  [1m[34mSELECT  `recipes`.* FROM `recipes` WHERE `recipes`.`id` = 7 LIMIT 1[0m
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering recipes/edit.html.erb within layouts/application
+  [1m[36mIngredient Load (1.1ms)[0m  [1m[34mSELECT `ingredients`.* FROM `ingredients` WHERE `ingredients`.`recipe_id` = 7[0m
+  Rendered recipes/_ingredient_fields.html.erb (3.7ms)
+  Rendered recipes/_ingredient_fields.html.erb (1.2ms)
+  Rendered recipes/_ingredient_fields.html.erb (1.4ms)
+  Rendered recipes/_ingredient_fields.html.erb (27.2ms)
+  Rendered recipes/_ingredient_fields.html.erb (1.6ms)
+  Rendered recipes/_ingredient_fields.html.erb (0.7ms)
+  Rendered recipes/_ingredient_fields.html.erb (1.8ms)
+  Rendered recipes/_ingredient_fields.html.erb (4.0ms)
+  Rendered recipes/_form.html.erb (1037.1ms)
+  Rendered recipes/edit.html.erb within layouts/application (1102.0ms)
+  Rendered layouts/shared/_nav.html.erb (2.6ms)
+Completed 200 OK in 2253ms (Views: 2100.5ms | ActiveRecord: 4.4ms)
+
+
+Started GET "/witch/myrecipes" for 10.0.2.2 at 2018-07-18 21:45:13 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WitchController#myrecipes as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering witch/myrecipes.html.erb within layouts/application
+  [1m[36mRecipe Load (1.1ms)[0m  [1m[34mSELECT  `recipes`.* FROM `recipes` WHERE `recipes`.`user_id` = 1 LIMIT 7 OFFSET 0[0m
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT COUNT(*) FROM `ingredients` WHERE `ingredients`.`recipe_id` = 59[0m
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `ingredients` WHERE `ingredients`.`recipe_id` = 91[0m
+  [1m[35m (25.9ms)[0m  [1m[34mSELECT COUNT(*) FROM `ingredients` WHERE `ingredients`.`recipe_id` = 102[0m
+  Rendered witch/myrecipes.html.erb within layouts/application (135.7ms)
+  Rendered layouts/shared/_nav.html.erb (3.5ms)
+Completed 200 OK in 1400ms (Views: 1295.6ms | ActiveRecord: 29.9ms)
+
+
+Started GET "/recipes/102/edit" for 10.0.2.2 at 2018-07-18 21:45:17 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RecipesController#edit as HTML
+  Parameters: {"id"=>"102"}
+  [1m[36mRecipe Load (0.7ms)[0m  [1m[34mSELECT  `recipes`.* FROM `recipes` WHERE `recipes`.`id` = 102 LIMIT 1[0m
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering recipes/edit.html.erb within layouts/application
+  [1m[36mIngredient Load (1.0ms)[0m  [1m[34mSELECT `ingredients`.* FROM `ingredients` WHERE `ingredients`.`recipe_id` = 102[0m
+  Rendered recipes/_ingredient_fields.html.erb (2.9ms)
+  Rendered recipes/_ingredient_fields.html.erb (1.5ms)
+  Rendered recipes/_ingredient_fields.html.erb (2.9ms)
+  Rendered recipes/_form.html.erb (254.4ms)
+  Rendered recipes/edit.html.erb within layouts/application (342.4ms)
+  Rendered layouts/shared/_nav.html.erb (5.1ms)
+Completed 200 OK in 1267ms (Views: 1229.1ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/witch/myrecipes" for 10.0.2.2 at 2018-07-18 21:45:53 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (1.3ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by WitchController#myrecipes as HTML
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering witch/myrecipes.html.erb within layouts/application
+  [1m[36mRecipe Load (1.7ms)[0m  [1m[34mSELECT  `recipes`.* FROM `recipes` WHERE `recipes`.`user_id` = 1 LIMIT 7 OFFSET 0[0m
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT COUNT(*) FROM `ingredients` WHERE `ingredients`.`recipe_id` = 59[0m
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `ingredients` WHERE `ingredients`.`recipe_id` = 91[0m
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT COUNT(*) FROM `ingredients` WHERE `ingredients`.`recipe_id` = 102[0m
+  Rendered witch/myrecipes.html.erb within layouts/application (10888.1ms)
+  Rendered layouts/shared/_nav.html.erb (4.6ms)
+Completed 200 OK in 16867ms (Views: 16167.6ms | ActiveRecord: 14.0ms)
+
+
+Started GET "/recipes/59/edit" for 10.0.2.2 at 2018-07-18 21:46:16 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RecipesController#edit as HTML
+  Parameters: {"id"=>"59"}
+  [1m[36mRecipe Load (1.4ms)[0m  [1m[34mSELECT  `recipes`.* FROM `recipes` WHERE `recipes`.`id` = 59 LIMIT 1[0m
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering recipes/edit.html.erb within layouts/application
+  [1m[36mIngredient Load (1.2ms)[0m  [1m[34mSELECT `ingredients`.* FROM `ingredients` WHERE `ingredients`.`recipe_id` = 59[0m
+  Rendered recipes/_ingredient_fields.html.erb (3.3ms)
+  Rendered recipes/_ingredient_fields.html.erb (1.8ms)
+  Rendered recipes/_ingredient_fields.html.erb (0.8ms)
+  Rendered recipes/_ingredient_fields.html.erb (1.8ms)
+  Rendered recipes/_ingredient_fields.html.erb (2.6ms)
+  Rendered recipes/_ingredient_fields.html.erb (1.2ms)
+  Rendered recipes/_ingredient_fields.html.erb (2.5ms)
+  Rendered recipes/_ingredient_fields.html.erb (1.5ms)
+  Rendered recipes/_ingredient_fields.html.erb (3.6ms)
+  Rendered recipes/_form.html.erb (1149.7ms)
+  Rendered recipes/edit.html.erb within layouts/application (1238.7ms)
+  Rendered layouts/shared/_nav.html.erb (3.8ms)
+Completed 200 OK in 2316ms (Views: 2204.2ms | ActiveRecord: 4.2ms)
+
+
+Started DELETE "/users/sign_out" for 10.0.2.2 at 2018-07-18 21:46:23 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"eDhxtRjCbSrYM4tX423sokxj7wD57M6S7twTCFP23HChIGVYYoGd2vHceDDGg4NyF3q9XSMwNRwijmcwy2KtBg=="}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3001/
+Completed 302 Found in 90ms (ActiveRecord: 1.9ms)
+
+
+Started GET "/" for 10.0.2.2 at 2018-07-18 21:46:24 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RecipesController#index as HTML
+  Rendering recipes/index.html.erb within layouts/application
+  [1m[36mRecipe Load (0.8ms)[0m  [1m[34mSELECT  `recipes`.* FROM `recipes` LIMIT 7 OFFSET 0[0m
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 9 LIMIT 1[0m
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `ingredients` WHERE `ingredients`.`recipe_id` = 1[0m
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 11 LIMIT 1[0m
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `ingredients` WHERE `ingredients`.`recipe_id` = 2[0m
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 5 LIMIT 1[0m
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT COUNT(*) FROM `ingredients` WHERE `ingredients`.`recipe_id` = 3[0m
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 20 LIMIT 1[0m
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT COUNT(*) FROM `ingredients` WHERE `ingredients`.`recipe_id` = 4[0m
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 18 LIMIT 1[0m
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `ingredients` WHERE `ingredients`.`recipe_id` = 5[0m
+  [1m[36mCACHE User Load (0.1ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 9 LIMIT 1[0m  [["id", 9], ["LIMIT", 1]]
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT COUNT(*) FROM `ingredients` WHERE `ingredients`.`recipe_id` = 6[0m
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `ingredients` WHERE `ingredients`.`recipe_id` = 7[0m
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT COUNT(*) FROM `recipes`[0m
+  Rendered recipes/index.html.erb within layouts/application (869.9ms)
+  Rendered layouts/shared/_nav.html.erb (38.4ms)
+Completed 200 OK in 1811ms (Views: 1712.6ms | ActiveRecord: 14.5ms)
+
+
+Started GET "/users/sign_in" for 10.0.2.2 at 2018-07-18 21:46:29 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  Rendering /home/vagrant/.rvm/gems/ruby-2.5.0/gems/devise-4.4.3/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /home/vagrant/.rvm/gems/ruby-2.5.0/gems/devise-4.4.3/app/views/devise/shared/_links.html.erb (6.5ms)
+  Rendered /home/vagrant/.rvm/gems/ruby-2.5.0/gems/devise-4.4.3/app/views/devise/sessions/new.html.erb within layouts/application (233.1ms)
+  Rendered layouts/shared/_nav.html.erb (4.0ms)
+Completed 200 OK in 1387ms (Views: 1346.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 10.0.2.2 at 2018-07-18 21:46:47 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"o8PzpzGxuuOV2WiTZjX9SXqp4J1Gxtt7XV0Xcb9g55R6pMc1kNkulJP0MWWQHXFoweM9I3yIv0Fz5isv3Hjosw==", "user"=>{"email"=>"teste@email.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (2.2ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`email` = 'teste@email.com' ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (1.0ms)[0m  [1m[33mUPDATE `users` SET `current_sign_in_at` = '2018-07-18 21:46:48', `last_sign_in_at` = '2018-07-18 21:22:54', `sign_in_count` = 8, `updated_at` = '2018-07-18 21:46:48' WHERE `users`.`id` = 1[0m
+  [1m[35m (174.5ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3001/
+Completed 302 Found in 1578ms (ActiveRecord: 178.1ms)
+
+
+Started GET "/" for 10.0.2.2 at 2018-07-18 21:46:49 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RecipesController#index as HTML
+  Rendering recipes/index.html.erb within layouts/application
+  [1m[36mRecipe Load (1.0ms)[0m  [1m[34mSELECT  `recipes`.* FROM `recipes` LIMIT 7 OFFSET 0[0m
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 9 LIMIT 1[0m
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `ingredients` WHERE `ingredients`.`recipe_id` = 1[0m
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 11 LIMIT 1[0m
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `ingredients` WHERE `ingredients`.`recipe_id` = 2[0m
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 5 LIMIT 1[0m
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `ingredients` WHERE `ingredients`.`recipe_id` = 3[0m
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 20 LIMIT 1[0m
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `ingredients` WHERE `ingredients`.`recipe_id` = 4[0m
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 18 LIMIT 1[0m
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT COUNT(*) FROM `ingredients` WHERE `ingredients`.`recipe_id` = 5[0m
+  [1m[36mCACHE User Load (0.1ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 9 LIMIT 1[0m  [["id", 9], ["LIMIT", 1]]
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT COUNT(*) FROM `ingredients` WHERE `ingredients`.`recipe_id` = 6[0m
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT COUNT(*) FROM `ingredients` WHERE `ingredients`.`recipe_id` = 7[0m
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT COUNT(*) FROM `recipes`[0m
+  Rendered recipes/index.html.erb within layouts/application (873.8ms)
+  [1m[36mUser Load (1.7ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendered layouts/shared/_nav.html.erb (14.8ms)
+Completed 200 OK in 1862ms (Views: 1756.7ms | ActiveRecord: 15.0ms)
+
+
+Started GET "/witch/myrecipes" for 10.0.2.2 at 2018-07-18 21:47:02 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WitchController#myrecipes as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering witch/myrecipes.html.erb within layouts/application
+  [1m[36mRecipe Load (1.2ms)[0m  [1m[34mSELECT  `recipes`.* FROM `recipes` WHERE `recipes`.`user_id` = 1 LIMIT 7 OFFSET 0[0m
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT COUNT(*) FROM `ingredients` WHERE `ingredients`.`recipe_id` = 59[0m
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT COUNT(*) FROM `ingredients` WHERE `ingredients`.`recipe_id` = 91[0m
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT COUNT(*) FROM `ingredients` WHERE `ingredients`.`recipe_id` = 102[0m
+  Rendered witch/myrecipes.html.erb within layouts/application (137.8ms)
+  Rendered layouts/shared/_nav.html.erb (6.2ms)
+Completed 200 OK in 1095ms (Views: 1052.8ms | ActiveRecord: 5.1ms)
+
+
+Started GET "/recipes/59/edit" for 10.0.2.2 at 2018-07-18 21:47:16 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RecipesController#edit as HTML
+  Parameters: {"id"=>"59"}
+  [1m[36mRecipe Load (0.9ms)[0m  [1m[34mSELECT  `recipes`.* FROM `recipes` WHERE `recipes`.`id` = 59 LIMIT 1[0m
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering recipes/edit.html.erb within layouts/application
+  [1m[36mIngredient Load (1.4ms)[0m  [1m[34mSELECT `ingredients`.* FROM `ingredients` WHERE `ingredients`.`recipe_id` = 59[0m
+  Rendered recipes/_ingredient_fields.html.erb (3.9ms)
+  Rendered recipes/_ingredient_fields.html.erb (1.8ms)
+  Rendered recipes/_ingredient_fields.html.erb (2.5ms)
+  Rendered recipes/_ingredient_fields.html.erb (2.5ms)
+  Rendered recipes/_ingredient_fields.html.erb (1.0ms)
+  Rendered recipes/_ingredient_fields.html.erb (1.6ms)
+  Rendered recipes/_ingredient_fields.html.erb (3.0ms)
+  Rendered recipes/_ingredient_fields.html.erb (2.8ms)
+  Rendered recipes/_ingredient_fields.html.erb (27.8ms)
+  Rendered recipes/_form.html.erb (820.2ms)
+  Rendered recipes/edit.html.erb within layouts/application (906.1ms)
+  Rendered layouts/shared/_nav.html.erb (3.8ms)
+Completed 200 OK in 1964ms (Views: 1840.8ms | ActiveRecord: 3.2ms)
+
+
+Started GET "/witch/myrecipes" for 10.0.2.2 at 2018-07-18 21:48:50 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WitchController#myrecipes as HTML
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering witch/myrecipes.html.erb within layouts/application
+  [1m[36mRecipe Load (1.4ms)[0m  [1m[34mSELECT  `recipes`.* FROM `recipes` WHERE `recipes`.`user_id` = 1 LIMIT 7 OFFSET 0[0m
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT COUNT(*) FROM `ingredients` WHERE `ingredients`.`recipe_id` = 59[0m
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT COUNT(*) FROM `ingredients` WHERE `ingredients`.`recipe_id` = 91[0m
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT COUNT(*) FROM `ingredients` WHERE `ingredients`.`recipe_id` = 102[0m
+  Rendered witch/myrecipes.html.erb within layouts/application (195.7ms)
+  Rendered layouts/shared/_nav.html.erb (28.3ms)
+Completed 200 OK in 1488ms (Views: 1383.6ms | ActiveRecord: 6.3ms)
+
+
+Started DELETE "/users/sign_out" for 10.0.2.2 at 2018-07-18 21:48:55 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"i5WEJftovlt6pBGVirGTl0+Ltc8jQttHKu+f58hpHgVOuBZF1wxNifiQNYi0Wumxp6U8TGBgyJYLTSK8w+C/fQ=="}
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3001/
+Completed 302 Found in 46ms (ActiveRecord: 1.8ms)
+
+
+Started GET "/" for 10.0.2.2 at 2018-07-18 21:49:12 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RecipesController#index as HTML
+  Rendering recipes/index.html.erb within layouts/application
+  [1m[36mRecipe Load (0.7ms)[0m  [1m[34mSELECT  `recipes`.* FROM `recipes` LIMIT 7 OFFSET 0[0m
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 9 LIMIT 1[0m
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT COUNT(*) FROM `ingredients` WHERE `ingredients`.`recipe_id` = 1[0m
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 11 LIMIT 1[0m
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT COUNT(*) FROM `ingredients` WHERE `ingredients`.`recipe_id` = 2[0m
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 5 LIMIT 1[0m
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `ingredients` WHERE `ingredients`.`recipe_id` = 3[0m
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 20 LIMIT 1[0m
+  [1m[35m (25.6ms)[0m  [1m[34mSELECT COUNT(*) FROM `ingredients` WHERE `ingredients`.`recipe_id` = 4[0m
+  [1m[36mUser Load (1.9ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 18 LIMIT 1[0m
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT COUNT(*) FROM `ingredients` WHERE `ingredients`.`recipe_id` = 5[0m
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 9 LIMIT 1[0m  [["id", 9], ["LIMIT", 1]]
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT COUNT(*) FROM `ingredients` WHERE `ingredients`.`recipe_id` = 6[0m
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT COUNT(*) FROM `ingredients` WHERE `ingredients`.`recipe_id` = 7[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM `recipes`[0m
+  Rendered recipes/index.html.erb within layouts/application (1111.3ms)
+  Rendered layouts/shared/_nav.html.erb (6.1ms)
+Completed 200 OK in 2492ms (Views: 2320.6ms | ActiveRecord: 39.3ms)
+
+
+Started GET "/witch/myrecipes" for 10.0.2.2 at 2018-07-18 21:50:21 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WitchController#myrecipes as HTML
+Completed 401 Unauthorized in 27ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 10.0.2.2 at 2018-07-18 21:50:21 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  Rendering /home/vagrant/.rvm/gems/ruby-2.5.0/gems/devise-4.4.3/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /home/vagrant/.rvm/gems/ruby-2.5.0/gems/devise-4.4.3/app/views/devise/shared/_links.html.erb (1.9ms)
+  Rendered /home/vagrant/.rvm/gems/ruby-2.5.0/gems/devise-4.4.3/app/views/devise/sessions/new.html.erb within layouts/application (90.1ms)
+  Rendered layouts/shared/_nav.html.erb (3.3ms)
+Completed 200 OK in 1060ms (Views: 1056.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 10.0.2.2 at 2018-07-18 21:50:42 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"wwGpkVHAFi/acbx89019Ld0HJDOZAbSmVAjsgv84ZF0FqTvmlbm++MCbYrmEWpMH/FG5EAJYqk185yVn04VkQA==", "user"=>{"email"=>"teste@email.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+Completed 401 Unauthorized in 2ms (ActiveRecord: 0.0ms)
+
+
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"wwGpkVHAFi/acbx89019Ld0HJDOZAbSmVAjsgv84ZF0FqTvmlbm++MCbYrmEWpMH/FG5EAJYqk185yVn04VkQA==", "user"=>{"email"=>"teste@email.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  Rendering /home/vagrant/.rvm/gems/ruby-2.5.0/gems/devise-4.4.3/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /home/vagrant/.rvm/gems/ruby-2.5.0/gems/devise-4.4.3/app/views/devise/shared/_links.html.erb (3.3ms)
+  Rendered /home/vagrant/.rvm/gems/ruby-2.5.0/gems/devise-4.4.3/app/views/devise/sessions/new.html.erb within layouts/application (123.5ms)
+  Rendered layouts/shared/_nav.html.erb (2.8ms)
+Completed 200 OK in 1157ms (Views: 1156.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 10.0.2.2 at 2018-07-18 21:50:49 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"7eqsfoJz5VRUE8jxSK4eNQ/sEX6LM5c3AoaKwDGHk2IrQj4JRgpNg075FjQ7ufAfLrqMXRBqidwqaUMlHTqTfw==", "user"=>{"email"=>"teste@email.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`email` = 'teste@email.com' ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (1.0ms)[0m  [1m[33mUPDATE `users` SET `current_sign_in_at` = '2018-07-18 21:50:50', `last_sign_in_at` = '2018-07-18 21:46:48', `sign_in_count` = 9, `updated_at` = '2018-07-18 21:50:50' WHERE `users`.`id` = 1[0m
+  [1m[35m (171.0ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3001/witch/myrecipes
+Completed 302 Found in 1428ms (ActiveRecord: 173.7ms)
+
+
+Started GET "/witch/myrecipes" for 10.0.2.2 at 2018-07-18 21:50:51 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WitchController#myrecipes as HTML
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering witch/myrecipes.html.erb within layouts/application
+  [1m[36mRecipe Load (1.0ms)[0m  [1m[34mSELECT  `recipes`.* FROM `recipes` WHERE `recipes`.`user_id` = 1 LIMIT 7 OFFSET 0[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT COUNT(*) FROM `ingredients` WHERE `ingredients`.`recipe_id` = 59[0m
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT COUNT(*) FROM `ingredients` WHERE `ingredients`.`recipe_id` = 91[0m
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT COUNT(*) FROM `ingredients` WHERE `ingredients`.`recipe_id` = 102[0m
+  Rendered witch/myrecipes.html.erb within layouts/application (141.9ms)
+  Rendered layouts/shared/_nav.html.erb (5.5ms)
+Completed 200 OK in 1200ms (Views: 1106.2ms | ActiveRecord: 4.8ms)
+
+
+Started GET "/" for 10.0.2.2 at 2018-07-18 21:58:13 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RecipesController#index as HTML
+  Rendering recipes/index.html.erb within layouts/application
+  [1m[36mRecipe Load (0.6ms)[0m  [1m[34mSELECT  `recipes`.* FROM `recipes` LIMIT 7 OFFSET 0[0m
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 9 LIMIT 1[0m
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `ingredients` WHERE `ingredients`.`recipe_id` = 1[0m
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 11 LIMIT 1[0m
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `ingredients` WHERE `ingredients`.`recipe_id` = 2[0m
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 5 LIMIT 1[0m
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT COUNT(*) FROM `ingredients` WHERE `ingredients`.`recipe_id` = 3[0m
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 20 LIMIT 1[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM `ingredients` WHERE `ingredients`.`recipe_id` = 4[0m
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 18 LIMIT 1[0m
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT COUNT(*) FROM `ingredients` WHERE `ingredients`.`recipe_id` = 5[0m
+  [1m[36mCACHE User Load (0.1ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 9 LIMIT 1[0m  [["id", 9], ["LIMIT", 1]]
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT COUNT(*) FROM `ingredients` WHERE `ingredients`.`recipe_id` = 6[0m
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT COUNT(*) FROM `ingredients` WHERE `ingredients`.`recipe_id` = 7[0m
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT COUNT(*) FROM `recipes`[0m
+  Rendered recipes/index.html.erb within layouts/application (998.1ms)
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendered layouts/shared/_nav.html.erb (7.6ms)
+Completed 200 OK in 2022ms (Views: 1951.0ms | ActiveRecord: 16.2ms)
+
+
+Started GET "/" for 10.0.2.2 at 2018-07-18 21:58:57 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RecipesController#index as HTML
+  Rendering recipes/index.html.erb within layouts/application
+  [1m[36mRecipe Load (1.0ms)[0m  [1m[34mSELECT  `recipes`.* FROM `recipes` LIMIT 7 OFFSET 0[0m
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 9 LIMIT 1[0m
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `ingredients` WHERE `ingredients`.`recipe_id` = 1[0m
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 11 LIMIT 1[0m
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `ingredients` WHERE `ingredients`.`recipe_id` = 2[0m
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 5 LIMIT 1[0m
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT COUNT(*) FROM `ingredients` WHERE `ingredients`.`recipe_id` = 3[0m
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 20 LIMIT 1[0m
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT COUNT(*) FROM `ingredients` WHERE `ingredients`.`recipe_id` = 4[0m
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 18 LIMIT 1[0m
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT COUNT(*) FROM `ingredients` WHERE `ingredients`.`recipe_id` = 5[0m
+  [1m[36mCACHE User Load (0.1ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 9 LIMIT 1[0m  [["id", 9], ["LIMIT", 1]]
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM `ingredients` WHERE `ingredients`.`recipe_id` = 6[0m
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM `ingredients` WHERE `ingredients`.`recipe_id` = 7[0m
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT COUNT(*) FROM `recipes`[0m
+  Rendered recipes/index.html.erb within layouts/application (1000.3ms)
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendered layouts/shared/_nav.html.erb (8.2ms)
+Completed 200 OK in 1964ms (Views: 1823.0ms | ActiveRecord: 13.9ms)
+
+
+Started GET "/" for 10.0.2.2 at 2018-07-18 21:59:16 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RecipesController#index as HTML
+  Rendering recipes/index.html.erb within layouts/application
+  [1m[36mRecipe Load (0.4ms)[0m  [1m[34mSELECT  `recipes`.* FROM `recipes` LIMIT 7 OFFSET 0[0m
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 9 LIMIT 1[0m
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT COUNT(*) FROM `ingredients` WHERE `ingredients`.`recipe_id` = 1[0m
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 11 LIMIT 1[0m
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT COUNT(*) FROM `ingredients` WHERE `ingredients`.`recipe_id` = 2[0m
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 5 LIMIT 1[0m
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT COUNT(*) FROM `ingredients` WHERE `ingredients`.`recipe_id` = 3[0m
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 20 LIMIT 1[0m
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT COUNT(*) FROM `ingredients` WHERE `ingredients`.`recipe_id` = 4[0m
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 18 LIMIT 1[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT COUNT(*) FROM `ingredients` WHERE `ingredients`.`recipe_id` = 5[0m
+  [1m[36mCACHE User Load (0.1ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 9 LIMIT 1[0m  [["id", 9], ["LIMIT", 1]]
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT COUNT(*) FROM `ingredients` WHERE `ingredients`.`recipe_id` = 6[0m
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT COUNT(*) FROM `ingredients` WHERE `ingredients`.`recipe_id` = 7[0m
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT COUNT(*) FROM `recipes`[0m
+  Rendered recipes/index.html.erb within layouts/application (1049.3ms)
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendered layouts/shared/_nav.html.erb (7.9ms)
+Completed 200 OK in 1981ms (Views: 1902.5ms | ActiveRecord: 16.0ms)
+
+
+Started GET "/witch/myrecipes" for 10.0.2.2 at 2018-07-18 21:59:34 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WitchController#myrecipes as HTML
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering witch/myrecipes.html.erb within layouts/application
+  [1m[36mRecipe Load (1.2ms)[0m  [1m[34mSELECT  `recipes`.* FROM `recipes` WHERE `recipes`.`user_id` = 1 LIMIT 7 OFFSET 0[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM `ingredients` WHERE `ingredients`.`recipe_id` = 59[0m
+  Rendered witch/myrecipes.html.erb within layouts/application (202.8ms)
+Completed 500 Internal Server Error in 440ms (ActiveRecord: 2.8ms)
+
+
+  
+ActionView::Template::Error (undefined method `preparationfirst' for #<Recipe:0x00000000061211e0>
+Did you mean?  preparation_was):
+    17:     <% @recipes.each do |recipe| %>
+    18:       <tr>
+    19:         <td><%= recipe.ingredients.count %></td>
+    20:         <td><%= recipe.preparationfirst(15)+"..." %></td>
+    21:         <td><%= link_to t('Show'), recipe %></td>
+    22:         <td><%= link_to t('Edit'), edit_recipe_path(recipe) %></td>
+    23:         <td><%= link_to t('Destroy'), recipe, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  
+app/views/witch/myrecipes.html.erb:20:in `block in _app_views_witch_myrecipes_html_erb___4500907852365603214_50982740'
+app/views/witch/myrecipes.html.erb:17:in `_app_views_witch_myrecipes_html_erb___4500907852365603214_50982740'
+Started GET "/witch/myrecipes" for 10.0.2.2 at 2018-07-18 22:00:24 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WitchController#myrecipes as HTML
+  [1m[36mUser Load (27.7ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering witch/myrecipes.html.erb within layouts/application
+  [1m[36mRecipe Load (1.3ms)[0m  [1m[34mSELECT  `recipes`.* FROM `recipes` WHERE `recipes`.`user_id` = 1 LIMIT 7 OFFSET 0[0m
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `ingredients` WHERE `ingredients`.`recipe_id` = 59[0m
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT COUNT(*) FROM `ingredients` WHERE `ingredients`.`recipe_id` = 91[0m
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT COUNT(*) FROM `ingredients` WHERE `ingredients`.`recipe_id` = 102[0m
+  Rendered witch/myrecipes.html.erb within layouts/application (139.6ms)
+  Rendered layouts/shared/_nav.html.erb (1.9ms)
+Completed 200 OK in 1287ms (Views: 1188.9ms | ActiveRecord: 32.2ms)
+
+
+Started DELETE "/users/sign_out" for 10.0.2.2 at 2018-07-18 22:00:40 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"xXU6d9LFo/0BsfhWdCNvfRjBYPeTG1kuMGQ/3c5t6J7VxA1oVxCkpq/d5LB1ei2D4pWW6GjcneO2Dl/Er56O5A=="}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3001/
+Completed 302 Found in 21ms (ActiveRecord: 1.8ms)
+
+
+Started GET "/" for 10.0.2.2 at 2018-07-18 22:00:40 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RecipesController#index as HTML
+  Rendering recipes/index.html.erb within layouts/application
+  [1m[36mRecipe Load (0.7ms)[0m  [1m[34mSELECT  `recipes`.* FROM `recipes` LIMIT 7 OFFSET 0[0m
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 9 LIMIT 1[0m
+  [1m[35m (26.8ms)[0m  [1m[34mSELECT COUNT(*) FROM `ingredients` WHERE `ingredients`.`recipe_id` = 1[0m
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 11 LIMIT 1[0m
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `ingredients` WHERE `ingredients`.`recipe_id` = 2[0m
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 5 LIMIT 1[0m
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT COUNT(*) FROM `ingredients` WHERE `ingredients`.`recipe_id` = 3[0m
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 20 LIMIT 1[0m
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `ingredients` WHERE `ingredients`.`recipe_id` = 4[0m
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 18 LIMIT 1[0m
+  [1m[35m (1.5ms)[0m  [1m[34mSELECT COUNT(*) FROM `ingredients` WHERE `ingredients`.`recipe_id` = 5[0m
+  [1m[36mCACHE User Load (0.1ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 9 LIMIT 1[0m  [["id", 9], ["LIMIT", 1]]
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `ingredients` WHERE `ingredients`.`recipe_id` = 6[0m
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT COUNT(*) FROM `ingredients` WHERE `ingredients`.`recipe_id` = 7[0m
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT COUNT(*) FROM `recipes`[0m
+  Rendered recipes/index.html.erb within layouts/application (911.4ms)
+  Rendered layouts/shared/_nav.html.erb (3.7ms)
+Completed 200 OK in 1870ms (Views: 1775.6ms | ActiveRecord: 40.7ms)
+
+
+Started GET "/" for 10.0.2.2 at 2018-07-18 22:01:19 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RecipesController#index as HTML
+  Rendering recipes/index.html.erb within layouts/application
+  [1m[36mRecipe Load (0.9ms)[0m  [1m[34mSELECT  `recipes`.* FROM `recipes` LIMIT 7 OFFSET 0[0m
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 9 LIMIT 1[0m
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT COUNT(*) FROM `ingredients` WHERE `ingredients`.`recipe_id` = 1[0m
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 11 LIMIT 1[0m
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT COUNT(*) FROM `ingredients` WHERE `ingredients`.`recipe_id` = 2[0m
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 5 LIMIT 1[0m
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT COUNT(*) FROM `ingredients` WHERE `ingredients`.`recipe_id` = 3[0m
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 20 LIMIT 1[0m
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT COUNT(*) FROM `ingredients` WHERE `ingredients`.`recipe_id` = 4[0m
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 18 LIMIT 1[0m
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT COUNT(*) FROM `ingredients` WHERE `ingredients`.`recipe_id` = 5[0m
+  [1m[36mCACHE User Load (0.1ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 9 LIMIT 1[0m  [["id", 9], ["LIMIT", 1]]
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `ingredients` WHERE `ingredients`.`recipe_id` = 6[0m
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `ingredients` WHERE `ingredients`.`recipe_id` = 7[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT COUNT(*) FROM `recipes`[0m
+  Rendered recipes/index.html.erb within layouts/application (1009.2ms)
+  Rendered layouts/shared/_nav.html.erb (5.2ms)
+Completed 200 OK in 2070ms (Views: 1959.4ms | ActiveRecord: 14.2ms)
+
+
+Started GET "/recipes/new" for 10.0.2.2 at 2018-07-18 22:01:31 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RecipesController#new as HTML
+Completed 401 Unauthorized in 27ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 10.0.2.2 at 2018-07-18 22:01:31 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  Rendering /home/vagrant/.rvm/gems/ruby-2.5.0/gems/devise-4.4.3/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /home/vagrant/.rvm/gems/ruby-2.5.0/gems/devise-4.4.3/app/views/devise/shared/_links.html.erb (3.4ms)
+  Rendered /home/vagrant/.rvm/gems/ruby-2.5.0/gems/devise-4.4.3/app/views/devise/sessions/new.html.erb within layouts/application (60.3ms)
+  Rendered layouts/shared/_nav.html.erb (29.6ms)
+Completed 200 OK in 1051ms (Views: 1048.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 10.0.2.2 at 2018-07-18 22:01:46 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"m31KRWue9slrhIJCFd+vM/Oe+dLB0b6X0zMjZ/9RYlqteZd97NELzZr4z7DSOXZkjmdwF33s9AJoND23LrghOQ==", "user"=>{"email"=>"teste@email.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`email` = 'teste@email.com' ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.7ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (1.0ms)[0m  [1m[33mUPDATE `users` SET `current_sign_in_at` = '2018-07-18 22:01:47', `last_sign_in_at` = '2018-07-18 21:50:50', `sign_in_count` = 10, `updated_at` = '2018-07-18 22:01:47' WHERE `users`.`id` = 1[0m
+  [1m[35m (39.9ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3001/recipes/new
+Completed 302 Found in 1231ms (ActiveRecord: 42.7ms)
+
+
+Started GET "/recipes/new" for 10.0.2.2 at 2018-07-18 22:01:48 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RecipesController#new as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering recipes/new.html.erb within layouts/application
+  Rendered recipes/_ingredient_fields.html.erb (3.0ms)
+  Rendered recipes/_form.html.erb (104.2ms)
+  Rendered recipes/new.html.erb within layouts/application (187.2ms)
+  Rendered layouts/shared/_nav.html.erb (28.8ms)
+Completed 200 OK in 1135ms (Views: 1048.6ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/witch/myrecipes" for 10.0.2.2 at 2018-07-18 22:01:52 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WitchController#myrecipes as HTML
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering witch/myrecipes.html.erb within layouts/application
+  [1m[36mRecipe Load (1.0ms)[0m  [1m[34mSELECT  `recipes`.* FROM `recipes` WHERE `recipes`.`user_id` = 1 LIMIT 7 OFFSET 0[0m
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `ingredients` WHERE `ingredients`.`recipe_id` = 59[0m
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `ingredients` WHERE `ingredients`.`recipe_id` = 91[0m
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT COUNT(*) FROM `ingredients` WHERE `ingredients`.`recipe_id` = 102[0m
+  Rendered witch/myrecipes.html.erb within layouts/application (130.3ms)
+  Rendered layouts/shared/_nav.html.erb (3.1ms)
+Completed 200 OK in 1163ms (Views: 1099.5ms | ActiveRecord: 5.0ms)
+
+
+Started GET "/" for 10.0.2.2 at 2018-07-18 22:02:41 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RecipesController#index as HTML
+  Rendering recipes/index.html.erb within layouts/application
+  [1m[36mRecipe Load (1.0ms)[0m  [1m[34mSELECT  `recipes`.* FROM `recipes` LIMIT 7 OFFSET 0[0m
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 9 LIMIT 1[0m
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT COUNT(*) FROM `ingredients` WHERE `ingredients`.`recipe_id` = 1[0m
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 11 LIMIT 1[0m
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT COUNT(*) FROM `ingredients` WHERE `ingredients`.`recipe_id` = 2[0m
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 5 LIMIT 1[0m
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `ingredients` WHERE `ingredients`.`recipe_id` = 3[0m
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 20 LIMIT 1[0m
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT COUNT(*) FROM `ingredients` WHERE `ingredients`.`recipe_id` = 4[0m
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 18 LIMIT 1[0m
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT COUNT(*) FROM `ingredients` WHERE `ingredients`.`recipe_id` = 5[0m
+  [1m[36mCACHE User Load (0.1ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 9 LIMIT 1[0m  [["id", 9], ["LIMIT", 1]]
+  [1m[35m (1.5ms)[0m  [1m[34mSELECT COUNT(*) FROM `ingredients` WHERE `ingredients`.`recipe_id` = 6[0m
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT COUNT(*) FROM `ingredients` WHERE `ingredients`.`recipe_id` = 7[0m
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT COUNT(*) FROM `recipes`[0m
+  Rendered recipes/index.html.erb within layouts/application (1011.4ms)
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendered layouts/shared/_nav.html.erb (8.2ms)
+Completed 200 OK in 2026ms (Views: 1920.3ms | ActiveRecord: 16.0ms)
+
+
+Started DELETE "/users/sign_out" for 10.0.2.2 at 2018-07-18 22:03:06 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"aPg4gfZ5l5PSCV0XfG2ZB3y+9bPmsmiPxsTBNVgR9nyu2SKj1PEVXRSS7kahclnVb3R+ib1z9sFFJ8wwGJv6sg=="}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3001/
+Completed 302 Found in 19ms (ActiveRecord: 2.0ms)
+
+
+Started GET "/" for 10.0.2.2 at 2018-07-18 22:03:06 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RecipesController#index as HTML
+  Rendering recipes/index.html.erb within layouts/application
+  [1m[36mRecipe Load (0.9ms)[0m  [1m[34mSELECT  `recipes`.* FROM `recipes` LIMIT 7 OFFSET 0[0m
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 9 LIMIT 1[0m
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT COUNT(*) FROM `ingredients` WHERE `ingredients`.`recipe_id` = 1[0m
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 11 LIMIT 1[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT COUNT(*) FROM `ingredients` WHERE `ingredients`.`recipe_id` = 2[0m
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 5 LIMIT 1[0m
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `ingredients` WHERE `ingredients`.`recipe_id` = 3[0m
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 20 LIMIT 1[0m
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT COUNT(*) FROM `ingredients` WHERE `ingredients`.`recipe_id` = 4[0m
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 18 LIMIT 1[0m
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT COUNT(*) FROM `ingredients` WHERE `ingredients`.`recipe_id` = 5[0m
+  [1m[36mCACHE User Load (0.1ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 9 LIMIT 1[0m  [["id", 9], ["LIMIT", 1]]
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT COUNT(*) FROM `ingredients` WHERE `ingredients`.`recipe_id` = 6[0m
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT COUNT(*) FROM `ingredients` WHERE `ingredients`.`recipe_id` = 7[0m
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT COUNT(*) FROM `recipes`[0m
+  Rendered recipes/index.html.erb within layouts/application (916.1ms)
+  Rendered layouts/shared/_nav.html.erb (2.9ms)
+Completed 200 OK in 2026ms (Views: 1947.0ms | ActiveRecord: 13.8ms)
+
+
+Started GET "/users/sign_in" for 10.0.2.2 at 2018-07-18 22:03:11 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  Rendering /home/vagrant/.rvm/gems/ruby-2.5.0/gems/devise-4.4.3/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /home/vagrant/.rvm/gems/ruby-2.5.0/gems/devise-4.4.3/app/views/devise/shared/_links.html.erb (2.9ms)
+  Rendered /home/vagrant/.rvm/gems/ruby-2.5.0/gems/devise-4.4.3/app/views/devise/sessions/new.html.erb within layouts/application (61.3ms)
+  Rendered layouts/shared/_nav.html.erb (3.4ms)
+Completed 200 OK in 1204ms (Views: 1199.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 10.0.2.2 at 2018-07-18 22:03:26 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"1KBVCicUH8KFVTTXC/ZM9fCzYXpu/oCeDfnTZnel93DK1F3ljui8RVFEZ6a3r+5zZKLr4SX13Ke3bMy8C4va3g==", "user"=>{"email"=>"josh@live.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`email` = 'josh@live.com' ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (1.0ms)[0m  [1m[33mUPDATE `users` SET `current_sign_in_at` = '2018-07-18 22:03:27', `last_sign_in_at` = '2018-07-18 22:03:27', `current_sign_in_ip` = '10.0.2.2', `last_sign_in_ip` = '10.0.2.2', `sign_in_count` = 1, `updated_at` = '2018-07-18 22:03:27' WHERE `users`.`id` = 5[0m
+  [1m[35m (187.4ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3001/
+Completed 302 Found in 1488ms (ActiveRecord: 189.7ms)
+
+
+Started GET "/" for 10.0.2.2 at 2018-07-18 22:03:27 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RecipesController#index as HTML
+  Rendering recipes/index.html.erb within layouts/application
+  [1m[36mRecipe Load (0.8ms)[0m  [1m[34mSELECT  `recipes`.* FROM `recipes` LIMIT 7 OFFSET 0[0m
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 9 LIMIT 1[0m
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `ingredients` WHERE `ingredients`.`recipe_id` = 1[0m
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 11 LIMIT 1[0m
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT COUNT(*) FROM `ingredients` WHERE `ingredients`.`recipe_id` = 2[0m
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 5 LIMIT 1[0m
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT COUNT(*) FROM `ingredients` WHERE `ingredients`.`recipe_id` = 3[0m
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 20 LIMIT 1[0m
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT COUNT(*) FROM `ingredients` WHERE `ingredients`.`recipe_id` = 4[0m
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 18 LIMIT 1[0m
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT COUNT(*) FROM `ingredients` WHERE `ingredients`.`recipe_id` = 5[0m
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 9 LIMIT 1[0m  [["id", 9], ["LIMIT", 1]]
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT COUNT(*) FROM `ingredients` WHERE `ingredients`.`recipe_id` = 6[0m
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  [1m[35m (1.7ms)[0m  [1m[34mSELECT COUNT(*) FROM `ingredients` WHERE `ingredients`.`recipe_id` = 7[0m
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT COUNT(*) FROM `recipes`[0m
+  Rendered recipes/index.html.erb within layouts/application (875.3ms)
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 5 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendered layouts/shared/_nav.html.erb (7.2ms)
+Completed 200 OK in 1884ms (Views: 1802.6ms | ActiveRecord: 14.9ms)
+
+
+Started GET "/witch/myrecipes" for 10.0.2.2 at 2018-07-18 22:03:45 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WitchController#myrecipes as HTML
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 5 ORDER BY `users`.`id` ASC LIMIT 1[0m
+Started GET "/witch/myrecipes" for 10.0.2.2 at 2018-07-18 22:03:45 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WitchController#myrecipes as HTML
+  [1m[35m (0.6ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 5 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering witch/myrecipes.html.erb within layouts/application
+  [1m[36mRecipe Load (1.5ms)[0m  [1m[34mSELECT  `recipes`.* FROM `recipes` WHERE `recipes`.`user_id` = 5 LIMIT 7 OFFSET 0[0m
+  [1m[35m (122.8ms)[0m  [1m[34mSELECT COUNT(*) FROM `ingredients` WHERE `ingredients`.`recipe_id` = 3[0m
+  [1m[35m (1.5ms)[0m  [1m[34mSELECT COUNT(*) FROM `ingredients` WHERE `ingredients`.`recipe_id` = 27[0m
+  [1m[35m (26.8ms)[0m  [1m[34mSELECT COUNT(*) FROM `ingredients` WHERE `ingredients`.`recipe_id` = 49[0m
+  [1m[35m (1.9ms)[0m  [1m[34mSELECT COUNT(*) FROM `ingredients` WHERE `ingredients`.`recipe_id` = 64[0m
+  [1m[35m (2.4ms)[0m  [1m[34mSELECT COUNT(*) FROM `ingredients` WHERE `ingredients`.`recipe_id` = 98[0m
+  Rendered witch/myrecipes.html.erb within layouts/application (433.8ms)
+  Rendering witch/myrecipes.html.erb within layouts/application
+  [1m[36mRecipe Load (1.5ms)[0m  [1m[34mSELECT  `recipes`.* FROM `recipes` WHERE `recipes`.`user_id` = 5 LIMIT 7 OFFSET 0[0m
+  [1m[35m (2.3ms)[0m  [1m[34mSELECT COUNT(*) FROM `ingredients` WHERE `ingredients`.`recipe_id` = 3[0m
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT COUNT(*) FROM `ingredients` WHERE `ingredients`.`recipe_id` = 27[0m
+  [1m[35m (26.5ms)[0m  [1m[34mSELECT COUNT(*) FROM `ingredients` WHERE `ingredients`.`recipe_id` = 49[0m
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT COUNT(*) FROM `ingredients` WHERE `ingredients`.`recipe_id` = 64[0m
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT COUNT(*) FROM `ingredients` WHERE `ingredients`.`recipe_id` = 98[0m
+  Rendered witch/myrecipes.html.erb within layouts/application (186.7ms)
+  Rendered layouts/shared/_nav.html.erb (4.9ms)
+Completed 200 OK in 2123ms (Views: 1854.5ms | ActiveRecord: 158.1ms)
+
+
+  Rendered layouts/shared/_nav.html.erb (1.0ms)
+Completed 200 OK in 2071ms (Views: 1831.4ms | ActiveRecord: 34.7ms)
+
+
+Started GET "/recipes/new" for 10.0.2.2 at 2018-07-18 22:03:59 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RecipesController#new as HTML
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 5 ORDER BY `users`.`id` ASC LIMIT 1[0m
+Started GET "/" for 10.0.2.2 at 2018-07-18 22:04:00 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  Rendering recipes/new.html.erb within layouts/application
+Processing by RecipesController#index as HTML
+  Rendered recipes/_ingredient_fields.html.erb (28.7ms)
+  Rendered recipes/_form.html.erb (144.4ms)
+  Rendered recipes/new.html.erb within layouts/application (337.1ms)
+  Rendering recipes/index.html.erb within layouts/application
+  [1m[36mRecipe Load (1.1ms)[0m  [1m[34mSELECT  `recipes`.* FROM `recipes` LIMIT 7 OFFSET 0[0m
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 9 LIMIT 1[0m
+  [1m[35m (26.1ms)[0m  [1m[34mSELECT COUNT(*) FROM `ingredients` WHERE `ingredients`.`recipe_id` = 1[0m
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 11 LIMIT 1[0m
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT COUNT(*) FROM `ingredients` WHERE `ingredients`.`recipe_id` = 2[0m
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 5 LIMIT 1[0m
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT COUNT(*) FROM `ingredients` WHERE `ingredients`.`recipe_id` = 3[0m
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 20 LIMIT 1[0m
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT COUNT(*) FROM `ingredients` WHERE `ingredients`.`recipe_id` = 4[0m
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 18 LIMIT 1[0m
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT COUNT(*) FROM `ingredients` WHERE `ingredients`.`recipe_id` = 5[0m
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 9 LIMIT 1[0m  [["id", 9], ["LIMIT", 1]]
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT COUNT(*) FROM `ingredients` WHERE `ingredients`.`recipe_id` = 6[0m
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT COUNT(*) FROM `ingredients` WHERE `ingredients`.`recipe_id` = 7[0m
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT COUNT(*) FROM `recipes`[0m
+  Rendered recipes/index.html.erb within layouts/application (1010.2ms)
+  Rendered layouts/shared/_nav.html.erb (7.2ms)
+Completed 200 OK in 2646ms (Views: 2511.0ms | ActiveRecord: 1.2ms)
+
+
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 5 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendered layouts/shared/_nav.html.erb (10.3ms)
+Completed 200 OK in 2501ms (Views: 2314.0ms | ActiveRecord: 41.0ms)
+
+
+Started GET "/?page=15" for 10.0.2.2 at 2018-07-18 22:04:05 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RecipesController#index as HTML
+  Parameters: {"page"=>"15"}
+  Rendering recipes/index.html.erb within layouts/application
+  [1m[36mRecipe Load (1.0ms)[0m  [1m[34mSELECT  `recipes`.* FROM `recipes` LIMIT 7 OFFSET 98[0m
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 17 LIMIT 1[0m
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT COUNT(*) FROM `ingredients` WHERE `ingredients`.`recipe_id` = 100[0m
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT COUNT(*) FROM `ingredients` WHERE `ingredients`.`recipe_id` = 102[0m
+  Rendered recipes/index.html.erb within layouts/application (766.6ms)
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 5 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendered layouts/shared/_nav.html.erb (35.1ms)
+Completed 200 OK in 1779ms (Views: 1682.9ms | ActiveRecord: 5.3ms)
+
+
+Started GET "/?page=14" for 10.0.2.2 at 2018-07-18 22:04:13 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RecipesController#index as HTML
+  Parameters: {"page"=>"14"}
+  Rendering recipes/index.html.erb within layouts/application
+  [1m[36mRecipe Load (1.0ms)[0m  [1m[34mSELECT  `recipes`.* FROM `recipes` LIMIT 7 OFFSET 91[0m
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 16 LIMIT 1[0m
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT COUNT(*) FROM `ingredients` WHERE `ingredients`.`recipe_id` = 93[0m
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 19 LIMIT 1[0m
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT COUNT(*) FROM `ingredients` WHERE `ingredients`.`recipe_id` = 94[0m
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 11 LIMIT 1[0m
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `ingredients` WHERE `ingredients`.`recipe_id` = 95[0m
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 15 LIMIT 1[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT COUNT(*) FROM `ingredients` WHERE `ingredients`.`recipe_id` = 96[0m
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 17 LIMIT 1[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM `ingredients` WHERE `ingredients`.`recipe_id` = 97[0m
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 5 LIMIT 1[0m
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `ingredients` WHERE `ingredients`.`recipe_id` = 98[0m
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 8 LIMIT 1[0m
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT COUNT(*) FROM `ingredients` WHERE `ingredients`.`recipe_id` = 99[0m
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT COUNT(*) FROM `recipes`[0m
+  Rendered recipes/index.html.erb within layouts/application (1150.3ms)
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 5 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendered layouts/shared/_nav.html.erb (13.3ms)
+Completed 200 OK in 2302ms (Views: 2204.3ms | ActiveRecord: 15.8ms)
+
+

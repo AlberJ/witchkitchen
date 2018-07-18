@@ -1,6 +1,20 @@
 <div class="nested-field">
-  Nome: <%= f.text_field :name %>
-  Quantidade: <%= f.text_field :quantity %>
-  Unitade: <%= f.text_field :unit %>
+  <p>
+  <div class="form-row">
+    <div class="form-group col-md-4">
+      <label>Nome</label>
+      <%= f.text_field :name, class:"form-control" %>
+    </div>
+    <div class="form-group col-md-4">
+      <label>Quantidade</label>
+      <%= f.text_field :quantity, class:"form-control" %>
+    </div>
+    <div class="form-group col-md-4">
+      <label>Unidade de medida</label>
+      <%= f.text_field :unit, class:"form-control" %>
+    </div>
+  </div>
+  <%= link_to_remove_association "Remover ingrediente", f, { wrapper_class: 'ingredient' } %>
+  </p>
 </div>
-<%= link_to_remove_association('[ - ]', f) %>
+

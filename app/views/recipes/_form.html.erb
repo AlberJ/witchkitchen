@@ -10,12 +10,13 @@
       </ul>
     </div>
   <% end %>
-
+<p>
   <div class="field">
     <%= form.label :user_id %>
     <%= form.text_field :user_id, id: :recipe_user_id %>
   </div>
-
+</p>
+<p>
   <div id="ingredients">
     <%= form.fields_for :ingredients do |ingredients_fields| %>
       <%= render partial:"ingredient_fields", locals:{f:ingredients_fields} %>
@@ -23,11 +24,13 @@
 
     <%= link_to_add_association('Adicionar ingrediente', form, :ingredients, class:"btn btn-light") %>
   </div>
-
+</p>
+<p>
   <div class="field">
     <%= form.label :preparation %>
-    <%= form.text_area :preparation, id: :recipe_preparation %>
+    <%= form.text_area :preparation, id: :recipe_preparation , class:"form-control" %>
   </div>
+</p>
 
   <div class="actions">
     <%= form.submit class:"btn btn-light" %>

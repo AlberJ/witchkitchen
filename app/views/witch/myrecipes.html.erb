@@ -5,22 +5,26 @@
 <table class="table table-hover">
   <thead>
     <tr>
-      <th scope="col">Enviado por</th>
       <th scope="col">Ingredientes</th>
       <th scope="col">Preparo</th>
+      <th scope="col">Ver</th>
+      <th scope="col">Editar</th>
+      <th scope="col">Apagar</th>
     </tr>
   </thead>
 
   <tbody>
     <% @recipes.each do |recipe| %>
       <tr>
-        <td><%= recipe.user.email %></td>
         <td><%= recipe.ingredients.count %></td>
-        <% if recipe.preparation.size > 80  %>
-          <td><%= recipe.preparation.first(80)+"..." %></td>
+        <% if recipe.preparation.size > 50  %>
+          <td><%= recipe.preparation.first(50)+"..." %></td>
         <% else  %>
           <td><%= recipe.preparation %></td>
         <% end -%>
+        <td><%= link_to t('Show'), recipe %></td>
+        <td><%= link_to t('Edit'), edit_recipe_path(recipe) %></td>
+        <td><%= link_to t('Destroy'), recipe, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
   </tbody>
@@ -29,5 +33,3 @@
 <div style="margin: 0 30px;">
   <%= paginate(@recipes) %>
 </div>
-
-
