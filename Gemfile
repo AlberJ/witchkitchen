@@ -8,6 +8,14 @@ end
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.1.6'
+# Faz aquela paginação marota
+gem 'kaminari'
+#A library for generating fake data such as names, addresses, and phone numbers.
+gem 'faker'
+# Devise
+gem 'rails-i18n', '~> 5.1' # For 5.0.x, 5.1.x and 5.2.x
+# Translations for the devise gem
+gem 'devise-i18n'
 # Bootstrap
 gem 'rails-assets-bootstrap', source: 'https://rails-assets.org'
 gem 'jquery-rails'

@@ -7,7 +7,6 @@
     <tr>
       <th scope="col">User</th>
       <th scope="col">Preparation</th>
-      <th colspan="3"></th>
     </tr>
   </thead>
 
@@ -24,7 +23,8 @@
   </tbody>
 </table>
 
-<br>
+<div style="margin: 0 25%;">
+  <%= paginate(@recipes) %>
+</div>
 
-<%= link_to 'New Recipe', new_recipe_path %>
 
