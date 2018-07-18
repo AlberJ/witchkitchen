@@ -8,6 +8,8 @@ end
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.1.6'
+# Faz aquela paginação marota agora traduzida muleque....
+gem 'kaminari-i18n'
 # Faz aquela paginação marota
 gem 'kaminari'
 #A library for generating fake data such as names, addresses, and phone numbers.
