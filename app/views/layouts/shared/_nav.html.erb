@@ -1,0 +1,25 @@
+<div style="margin:20px 0; ">
+  <ul class="nav justify-content-center">
+    <div style="margin-right:20px;">
+      <%= link_to root_path, class:"nav-item" do %>
+        <span class="btn btn-light">Receitas</span>
+      <% end %>
+    </div>
+
+    <div style="margin-right:20px;">
+      <%= link_to new_recipe_path, class:"nav-item" do %>
+        <span class="btn btn-light">Adicionar Receitas</span>
+      <% end %>
+    </div>
+
+    <% if user_signed_in? %>
+      <%= link_to destroy_user_session_path, method: :delete, class:"nav-item" do %>
+        <span class="btn btn-light">Sair </span><%= current_user.email %> <%= current_user.id %>
+      <% end %>
+    <% else %>
+      <%= link_to new_user_session_path, class:"nav-item" do %>
+        <span class="btn btn-light">Login</span>
+      <% end %>
+    <% end %>
+  </ul>
+</div>
