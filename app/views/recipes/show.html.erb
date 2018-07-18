@@ -31,5 +31,8 @@
   <%= t(@recipe.preparation) %>
 </p>
 
-<%= link_to t('Edit'), edit_recipe_path(@recipe) %> |
-<%= link_to t('Back'), recipes_path %>
+<div style="margin-right: 10px">
+  <%= link_to t('Edit'), edit_recipe_path(@recipe), class:"btn btn-light" %>
+</div>
+
+<%= link_to t('Back'), recipes_path, class:"btn btn-light" %>

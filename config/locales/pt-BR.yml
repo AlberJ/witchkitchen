@@ -1,8 +1,24 @@
 pt-BR:
+  Recipe:
+    one: Receita
+    other: Receitas
   Edit: Editar
   Back: Voltar
   Show: Visualizar
   Destroy: Apagar
+  Preparation:
+    one: Preparo
+    other: Preparos
+    ingredients:
+      one: Ingrediente
+      other: Ingredientes
+      name: Nome de ingrediente
+      unit: Unidade de ingrediente
+  Ingredient:
+    one: Ingrediente
+    other: Ingredientes
+    name: Nome de ingrediente
+    unit: Unidade de ingrediente
   faker:
     address:
       city_prefix: [Nova, Velha, Grande, Vila, Município de]

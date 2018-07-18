@@ -1,6 +1,10 @@
-<h1>Editing Recipe</h1>
+<h1>Modificar receita</h1>
 
-<%= render 'form', recipe: @recipe %>
+<p>
+  <%= render 'form', recipe: @recipe %>
+</p>
 
-<%= link_to 'Show', @recipe %> |
-<%= link_to 'Back', recipes_path %>
+<div style="margin-right: 10px">
+  <%= link_to t('Show'), @recipe, class:"btn btn-light" %> |
+</div>
+<%= link_to t('Back'), recipes_path, class:"btn btn-light" %>
