@@ -21791,3 +21791,298 @@ Processing by RecipesController#index as HTML
 Completed 200 OK in 327ms (Views: 304.5ms | ActiveRecord: 8.5ms)
 
 
+Started GET "/recipes/new" for 10.0.2.2 at 2018-07-19 13:13:36 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.4ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by RecipesController#new as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering recipes/new.html.erb within layouts/application
+  [1m[36mKind Load (0.5ms)[0m  [1m[34mSELECT `kinds`.* FROM `kinds`[0m
+  Rendered recipes/_ingredient_fields.html.erb (1.6ms)
+  Rendered recipes/_form.html.erb (2000.0ms)
+  Rendered recipes/new.html.erb within layouts/application (2017.6ms)
+  Rendered layouts/shared/_nav.html.erb (1.3ms)
+Completed 200 OK in 3176ms (Views: 3018.0ms | ActiveRecord: 7.1ms)
+
+
+Started GET "/recipes/new" for 10.0.2.2 at 2018-07-19 13:19:09 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RecipesController#new as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering recipes/new.html.erb within layouts/application
+  [1m[36mKind Load (0.4ms)[0m  [1m[34mSELECT `kinds`.* FROM `kinds`[0m
+  Rendered recipes/_ingredient_fields.html.erb (1.7ms)
+  Rendered recipes/_form.html.erb (26.3ms)
+  Rendered recipes/new.html.erb within layouts/application (40.5ms)
+  Rendered layouts/shared/_nav.html.erb (1.7ms)
+Completed 200 OK in 225ms (Views: 206.4ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/recipes/new" for 10.0.2.2 at 2018-07-19 13:20:07 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RecipesController#new as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering recipes/new.html.erb within layouts/application
+  [1m[36mKind Load (0.5ms)[0m  [1m[34mSELECT `kinds`.* FROM `kinds`[0m
+  Rendered recipes/_ingredient_fields.html.erb (1.2ms)
+  Rendered recipes/_form.html.erb (35.9ms)
+  Rendered recipes/new.html.erb within layouts/application (55.4ms)
+  Rendered layouts/shared/_nav.html.erb (2.0ms)
+Completed 200 OK in 241ms (Views: 224.0ms | ActiveRecord: 1.1ms)
+
+
+Started POST "/recipes" for 10.0.2.2 at 2018-07-19 13:24:22 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RecipesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"4MFC3D+teZ3jCsRSvs/mSTliMe/xWY4HvKC/Wm5wNYP5yzdjE7RIyGmUK1SHmlH+ia5GBJi7A8njKsxYV8HESg==", "recipe"=>{"user_id"=>"1", "name"=>"brigaderio", "kind_id"=>"2", "ingredients_attributes"=>{"1532006488599"=>{"name"=>" leite condensado", "quantity"=>"1", "unit"=>"caixa", "_destroy"=>"false"}, "1532006536604"=>{"name"=>"margarina sem sal", "quantity"=>"1", "unit"=>"colher", "_destroy"=>"false"}, "1532006558229"=>{"name"=>"chocolate em pó", "quantity"=>"4", "unit"=>"colheres", "_destroy"=>"false"}, "1532006594158"=>{"name"=>"chocolate granulado", "quantity"=>"", "unit"=>"a gosto", "_destroy"=>"false"}}, "preparation"=>"Em uma panela funda, acrescente o leite condensado, a margarina e o chocolate em pó.\r\nCozinhe em fogo médio e mexa até que o brigadeiro comece a desgrudar da panela.\r\nDeixe esfriar e faça pequenas bolas com a mão passando a massa no chocolate granulado."}, "commit"=>"Criar Recipe"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  [1m[36mKind Load (0.5ms)[0m  [1m[34mSELECT  `kinds`.* FROM `kinds` WHERE `kinds`.`id` = 2 LIMIT 1[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO `recipes` (`user_id`, `preparation`, `created_at`, `updated_at`, `kind_id`, `name`) VALUES (1, 'Em uma panela funda, acrescente o leite condensado, a margarina e o chocolate em pó.\r\nCozinhe em fogo médio e mexa até que o brigadeiro comece a desgrudar da panela.\r\nDeixe esfriar e faça pequenas bolas com a mão passando a massa no chocolate granulado.', '2018-07-19 13:24:22', '2018-07-19 13:24:22', 2, 'brigaderio')[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO `ingredients` (`recipe_id`, `name`, `quantity`, `unit`, `created_at`, `updated_at`) VALUES (103, ' leite condensado', 1.0, 'caixa', '2018-07-19 13:24:22', '2018-07-19 13:24:22')[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO `ingredients` (`recipe_id`, `name`, `quantity`, `unit`, `created_at`, `updated_at`) VALUES (103, 'margarina sem sal', 1.0, 'colher', '2018-07-19 13:24:22', '2018-07-19 13:24:22')[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO `ingredients` (`recipe_id`, `name`, `quantity`, `unit`, `created_at`, `updated_at`) VALUES (103, 'chocolate em pó', 4.0, 'colheres', '2018-07-19 13:24:22', '2018-07-19 13:24:22')[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO `ingredients` (`recipe_id`, `name`, `unit`, `created_at`, `updated_at`) VALUES (103, 'chocolate granulado', 'a gosto', '2018-07-19 13:24:22', '2018-07-19 13:24:22')[0m
+  [1m[35m (32.3ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3001/recipes/103
+Completed 302 Found in 93ms (ActiveRecord: 35.8ms)
+
+
+Started GET "/recipes/103" for 10.0.2.2 at 2018-07-19 13:24:22 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RecipesController#show as HTML
+  Parameters: {"id"=>"103"}
+  [1m[36mRecipe Load (0.4ms)[0m  [1m[34mSELECT  `recipes`.* FROM `recipes` WHERE `recipes`.`id` = 103 LIMIT 1[0m
+  Rendering recipes/show.html.erb within layouts/application
+  [1m[36mKind Load (0.5ms)[0m  [1m[34mSELECT  `kinds`.* FROM `kinds` WHERE `kinds`.`id` = 2 LIMIT 1[0m
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  [1m[36mIngredient Load (0.5ms)[0m  [1m[34mSELECT `ingredients`.* FROM `ingredients` WHERE `ingredients`.`recipe_id` = 103[0m
+  Rendered recipes/show.html.erb within layouts/application (9.1ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendered layouts/shared/_nav.html.erb (3.6ms)
+Completed 200 OK in 197ms (Views: 176.3ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/recipes" for 10.0.2.2 at 2018-07-19 13:25:34 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RecipesController#index as HTML
+  Rendering recipes/index.html.erb within layouts/application
+  [1m[36mRecipe Load (0.4ms)[0m  [1m[34mSELECT  `recipes`.* FROM `recipes` LIMIT 7 OFFSET 0[0m
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 15 LIMIT 1[0m
+  [1m[36mKind Load (0.5ms)[0m  [1m[34mSELECT  `kinds`.* FROM `kinds` WHERE `kinds`.`id` = 4 LIMIT 1[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM `ingredients` WHERE `ingredients`.`recipe_id` = 1[0m
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 5 LIMIT 1[0m
+  [1m[36mKind Load (0.4ms)[0m  [1m[34mSELECT  `kinds`.* FROM `kinds` WHERE `kinds`.`id` = 2 LIMIT 1[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM `ingredients` WHERE `ingredients`.`recipe_id` = 2[0m
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  [1m[36mCACHE Kind Load (0.0ms)[0m  [1m[34mSELECT  `kinds`.* FROM `kinds` WHERE `kinds`.`id` = 2 LIMIT 1[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM `ingredients` WHERE `ingredients`.`recipe_id` = 3[0m
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  [1m[36mKind Load (0.5ms)[0m  [1m[34mSELECT  `kinds`.* FROM `kinds` WHERE `kinds`.`id` = 5 LIMIT 1[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM `ingredients` WHERE `ingredients`.`recipe_id` = 4[0m
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 3 LIMIT 1[0m
+  [1m[36mCACHE Kind Load (0.0ms)[0m  [1m[34mSELECT  `kinds`.* FROM `kinds` WHERE `kinds`.`id` = 5 LIMIT 1[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM `ingredients` WHERE `ingredients`.`recipe_id` = 5[0m
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Kind Load (0.0ms)[0m  [1m[34mSELECT  `kinds`.* FROM `kinds` WHERE `kinds`.`id` = 4 LIMIT 1[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM `ingredients` WHERE `ingredients`.`recipe_id` = 6[0m
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 21 LIMIT 1[0m
+  [1m[36mKind Load (0.4ms)[0m  [1m[34mSELECT  `kinds`.* FROM `kinds` WHERE `kinds`.`id` = 1 LIMIT 1[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM `ingredients` WHERE `ingredients`.`recipe_id` = 7[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM `recipes`[0m
+  Rendered recipes/index.html.erb within layouts/application (169.0ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendered layouts/shared/_nav.html.erb (3.5ms)
+Completed 200 OK in 336ms (Views: 309.7ms | ActiveRecord: 8.5ms)
+
+
+Started GET "/witch/myrecipes" for 10.0.2.2 at 2018-07-19 13:25:39 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WitchController#myrecipes as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering witch/myrecipes.html.erb within layouts/application
+  [1m[36mRecipe Load (0.5ms)[0m  [1m[34mSELECT  `recipes`.* FROM `recipes` WHERE `recipes`.`user_id` = 1 LIMIT 7 OFFSET 0[0m
+  [1m[36mKind Load (0.4ms)[0m  [1m[34mSELECT  `kinds`.* FROM `kinds` WHERE `kinds`.`id` = 5 LIMIT 1[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM `ingredients` WHERE `ingredients`.`recipe_id` = 4[0m
+  [1m[36mKind Load (0.4ms)[0m  [1m[34mSELECT  `kinds`.* FROM `kinds` WHERE `kinds`.`id` = 4 LIMIT 1[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM `ingredients` WHERE `ingredients`.`recipe_id` = 6[0m
+  [1m[36mKind Load (0.5ms)[0m  [1m[34mSELECT  `kinds`.* FROM `kinds` WHERE `kinds`.`id` = 6 LIMIT 1[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM `ingredients` WHERE `ingredients`.`recipe_id` = 10[0m
+  [1m[36mKind Load (0.3ms)[0m  [1m[34mSELECT  `kinds`.* FROM `kinds` WHERE `kinds`.`id` = 1 LIMIT 1[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM `ingredients` WHERE `ingredients`.`recipe_id` = 25[0m
+  [1m[36mCACHE Kind Load (0.0ms)[0m  [1m[34mSELECT  `kinds`.* FROM `kinds` WHERE `kinds`.`id` = 1 LIMIT 1[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM `ingredients` WHERE `ingredients`.`recipe_id` = 28[0m
+  [1m[36mCACHE Kind Load (0.0ms)[0m  [1m[34mSELECT  `kinds`.* FROM `kinds` WHERE `kinds`.`id` = 5 LIMIT 1[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT COUNT(*) FROM `ingredients` WHERE `ingredients`.`recipe_id` = 29[0m
+  [1m[36mCACHE Kind Load (0.0ms)[0m  [1m[34mSELECT  `kinds`.* FROM `kinds` WHERE `kinds`.`id` = 1 LIMIT 1[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM `ingredients` WHERE `ingredients`.`recipe_id` = 56[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM `recipes` WHERE `recipes`.`user_id` = 1[0m
+  Rendered witch/myrecipes.html.erb within layouts/application (98.5ms)
+  Rendered layouts/shared/_nav.html.erb (1.2ms)
+Completed 200 OK in 285ms (Views: 251.1ms | ActiveRecord: 5.9ms)
+
+
+Started GET "/witch/myrecipes?page=2" for 10.0.2.2 at 2018-07-19 13:25:40 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WitchController#myrecipes as HTML
+  Parameters: {"page"=>"2"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering witch/myrecipes.html.erb within layouts/application
+  [1m[36mRecipe Load (0.5ms)[0m  [1m[34mSELECT  `recipes`.* FROM `recipes` WHERE `recipes`.`user_id` = 1 LIMIT 7 OFFSET 7[0m
+  [1m[36mKind Load (0.4ms)[0m  [1m[34mSELECT  `kinds`.* FROM `kinds` WHERE `kinds`.`id` = 7 LIMIT 1[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM `ingredients` WHERE `ingredients`.`recipe_id` = 68[0m
+  [1m[36mKind Load (0.4ms)[0m  [1m[34mSELECT  `kinds`.* FROM `kinds` WHERE `kinds`.`id` = 1 LIMIT 1[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM `ingredients` WHERE `ingredients`.`recipe_id` = 81[0m
+  [1m[36mKind Load (0.3ms)[0m  [1m[34mSELECT  `kinds`.* FROM `kinds` WHERE `kinds`.`id` = 8 LIMIT 1[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM `ingredients` WHERE `ingredients`.`recipe_id` = 89[0m
+  [1m[36mKind Load (0.3ms)[0m  [1m[34mSELECT  `kinds`.* FROM `kinds` WHERE `kinds`.`id` = 5 LIMIT 1[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT COUNT(*) FROM `ingredients` WHERE `ingredients`.`recipe_id` = 101[0m
+  [1m[36mCACHE Kind Load (0.0ms)[0m  [1m[34mSELECT  `kinds`.* FROM `kinds` WHERE `kinds`.`id` = 7 LIMIT 1[0m  [["id", 7], ["LIMIT", 1]]
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM `ingredients` WHERE `ingredients`.`recipe_id` = 102[0m
+  [1m[36mKind Load (0.3ms)[0m  [1m[34mSELECT  `kinds`.* FROM `kinds` WHERE `kinds`.`id` = 2 LIMIT 1[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM `ingredients` WHERE `ingredients`.`recipe_id` = 103[0m
+  Rendered witch/myrecipes.html.erb within layouts/application (96.7ms)
+  Rendered layouts/shared/_nav.html.erb (1.4ms)
+Completed 200 OK in 269ms (Views: 249.3ms | ActiveRecord: 5.4ms)
+
+
+Started GET "/recipes/103" for 10.0.2.2 at 2018-07-19 13:25:44 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RecipesController#show as HTML
+  Parameters: {"id"=>"103"}
+  [1m[36mRecipe Load (0.8ms)[0m  [1m[34mSELECT  `recipes`.* FROM `recipes` WHERE `recipes`.`id` = 103 LIMIT 1[0m
+  Rendering recipes/show.html.erb within layouts/application
+  [1m[36mKind Load (0.5ms)[0m  [1m[34mSELECT  `kinds`.* FROM `kinds` WHERE `kinds`.`id` = 2 LIMIT 1[0m
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  [1m[36mIngredient Load (0.4ms)[0m  [1m[34mSELECT `ingredients`.* FROM `ingredients` WHERE `ingredients`.`recipe_id` = 103[0m
+  Rendered recipes/show.html.erb within layouts/application (8.2ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendered layouts/shared/_nav.html.erb (3.3ms)
+Completed 200 OK in 182ms (Views: 161.1ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/recipes" for 10.0.2.2 at 2018-07-19 13:25:51 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RecipesController#index as HTML
+  Rendering recipes/index.html.erb within layouts/application
+  [1m[36mRecipe Load (0.3ms)[0m  [1m[34mSELECT  `recipes`.* FROM `recipes` LIMIT 7 OFFSET 0[0m
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 15 LIMIT 1[0m
+  [1m[36mKind Load (0.3ms)[0m  [1m[34mSELECT  `kinds`.* FROM `kinds` WHERE `kinds`.`id` = 4 LIMIT 1[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM `ingredients` WHERE `ingredients`.`recipe_id` = 1[0m
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 5 LIMIT 1[0m
+  [1m[36mKind Load (0.4ms)[0m  [1m[34mSELECT  `kinds`.* FROM `kinds` WHERE `kinds`.`id` = 2 LIMIT 1[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM `ingredients` WHERE `ingredients`.`recipe_id` = 2[0m
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  [1m[36mCACHE Kind Load (0.0ms)[0m  [1m[34mSELECT  `kinds`.* FROM `kinds` WHERE `kinds`.`id` = 2 LIMIT 1[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM `ingredients` WHERE `ingredients`.`recipe_id` = 3[0m
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  [1m[36mKind Load (0.3ms)[0m  [1m[34mSELECT  `kinds`.* FROM `kinds` WHERE `kinds`.`id` = 5 LIMIT 1[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM `ingredients` WHERE `ingredients`.`recipe_id` = 4[0m
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 3 LIMIT 1[0m
+  [1m[36mCACHE Kind Load (0.0ms)[0m  [1m[34mSELECT  `kinds`.* FROM `kinds` WHERE `kinds`.`id` = 5 LIMIT 1[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT COUNT(*) FROM `ingredients` WHERE `ingredients`.`recipe_id` = 5[0m
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Kind Load (0.0ms)[0m  [1m[34mSELECT  `kinds`.* FROM `kinds` WHERE `kinds`.`id` = 4 LIMIT 1[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM `ingredients` WHERE `ingredients`.`recipe_id` = 6[0m
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 21 LIMIT 1[0m
+  [1m[36mKind Load (0.3ms)[0m  [1m[34mSELECT  `kinds`.* FROM `kinds` WHERE `kinds`.`id` = 1 LIMIT 1[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM `ingredients` WHERE `ingredients`.`recipe_id` = 7[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM `recipes`[0m
+  Rendered recipes/index.html.erb within layouts/application (172.4ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendered layouts/shared/_nav.html.erb (3.6ms)
+Completed 200 OK in 353ms (Views: 327.1ms | ActiveRecord: 8.4ms)
+
+
+Started GET "/recipes/1" for 10.0.2.2 at 2018-07-19 13:25:55 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RecipesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mRecipe Load (0.4ms)[0m  [1m[34mSELECT  `recipes`.* FROM `recipes` WHERE `recipes`.`id` = 1 LIMIT 1[0m
+  Rendering recipes/show.html.erb within layouts/application
+  [1m[36mKind Load (0.4ms)[0m  [1m[34mSELECT  `kinds`.* FROM `kinds` WHERE `kinds`.`id` = 4 LIMIT 1[0m
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 15 LIMIT 1[0m
+  [1m[36mIngredient Load (0.5ms)[0m  [1m[34mSELECT `ingredients`.* FROM `ingredients` WHERE `ingredients`.`recipe_id` = 1[0m
+  Rendered recipes/show.html.erb within layouts/application (8.7ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendered layouts/shared/_nav.html.erb (4.0ms)
+Completed 200 OK in 189ms (Views: 172.6ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/recipes" for 10.0.2.2 at 2018-07-19 13:26:01 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RecipesController#index as HTML
+  Rendering recipes/index.html.erb within layouts/application
+  [1m[36mRecipe Load (0.3ms)[0m  [1m[34mSELECT  `recipes`.* FROM `recipes` LIMIT 7 OFFSET 0[0m
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 15 LIMIT 1[0m
+  [1m[36mKind Load (0.4ms)[0m  [1m[34mSELECT  `kinds`.* FROM `kinds` WHERE `kinds`.`id` = 4 LIMIT 1[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM `ingredients` WHERE `ingredients`.`recipe_id` = 1[0m
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 5 LIMIT 1[0m
+  [1m[36mKind Load (0.4ms)[0m  [1m[34mSELECT  `kinds`.* FROM `kinds` WHERE `kinds`.`id` = 2 LIMIT 1[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM `ingredients` WHERE `ingredients`.`recipe_id` = 2[0m
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  [1m[36mCACHE Kind Load (0.0ms)[0m  [1m[34mSELECT  `kinds`.* FROM `kinds` WHERE `kinds`.`id` = 2 LIMIT 1[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM `ingredients` WHERE `ingredients`.`recipe_id` = 3[0m
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  [1m[36mKind Load (0.3ms)[0m  [1m[34mSELECT  `kinds`.* FROM `kinds` WHERE `kinds`.`id` = 5 LIMIT 1[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM `ingredients` WHERE `ingredients`.`recipe_id` = 4[0m
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 3 LIMIT 1[0m
+  [1m[36mCACHE Kind Load (0.0ms)[0m  [1m[34mSELECT  `kinds`.* FROM `kinds` WHERE `kinds`.`id` = 5 LIMIT 1[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM `ingredients` WHERE `ingredients`.`recipe_id` = 5[0m
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Kind Load (0.0ms)[0m  [1m[34mSELECT  `kinds`.* FROM `kinds` WHERE `kinds`.`id` = 4 LIMIT 1[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM `ingredients` WHERE `ingredients`.`recipe_id` = 6[0m
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 21 LIMIT 1[0m
+  [1m[36mKind Load (0.4ms)[0m  [1m[34mSELECT  `kinds`.* FROM `kinds` WHERE `kinds`.`id` = 1 LIMIT 1[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM `ingredients` WHERE `ingredients`.`recipe_id` = 7[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM `recipes`[0m
+  Rendered recipes/index.html.erb within layouts/application (168.7ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendered layouts/shared/_nav.html.erb (3.4ms)
+Completed 200 OK in 337ms (Views: 312.6ms | ActiveRecord: 8.0ms)
+
+
+Started DELETE "/users/sign_out" for 10.0.2.2 at 2018-07-19 13:26:04 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"H7A5jTgaGFq28sBn2UXYTXDn6mLyN5bwRCCWhIHU+6IGukwyFAMpDzxsL2HgEG/6wCudiZvVGz4bquWGuGUKaw=="}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3001/
+Completed 302 Found in 14ms (ActiveRecord: 0.7ms)
+
+
+Started GET "/" for 10.0.2.2 at 2018-07-19 13:26:05 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RecipesController#index as HTML
+  Rendering recipes/index.html.erb within layouts/application
+  [1m[36mRecipe Load (0.4ms)[0m  [1m[34mSELECT  `recipes`.* FROM `recipes` LIMIT 7 OFFSET 0[0m
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 15 LIMIT 1[0m
+  [1m[36mKind Load (0.3ms)[0m  [1m[34mSELECT  `kinds`.* FROM `kinds` WHERE `kinds`.`id` = 4 LIMIT 1[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM `ingredients` WHERE `ingredients`.`recipe_id` = 1[0m
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 5 LIMIT 1[0m
+  [1m[36mKind Load (0.4ms)[0m  [1m[34mSELECT  `kinds`.* FROM `kinds` WHERE `kinds`.`id` = 2 LIMIT 1[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM `ingredients` WHERE `ingredients`.`recipe_id` = 2[0m
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  [1m[36mCACHE Kind Load (0.0ms)[0m  [1m[34mSELECT  `kinds`.* FROM `kinds` WHERE `kinds`.`id` = 2 LIMIT 1[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT COUNT(*) FROM `ingredients` WHERE `ingredients`.`recipe_id` = 3[0m
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  [1m[36mKind Load (0.3ms)[0m  [1m[34mSELECT  `kinds`.* FROM `kinds` WHERE `kinds`.`id` = 5 LIMIT 1[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM `ingredients` WHERE `ingredients`.`recipe_id` = 4[0m
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 3 LIMIT 1[0m
+  [1m[36mCACHE Kind Load (0.0ms)[0m  [1m[34mSELECT  `kinds`.* FROM `kinds` WHERE `kinds`.`id` = 5 LIMIT 1[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM `ingredients` WHERE `ingredients`.`recipe_id` = 5[0m
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Kind Load (0.0ms)[0m  [1m[34mSELECT  `kinds`.* FROM `kinds` WHERE `kinds`.`id` = 4 LIMIT 1[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM `ingredients` WHERE `ingredients`.`recipe_id` = 6[0m
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 21 LIMIT 1[0m
+  [1m[36mKind Load (0.3ms)[0m  [1m[34mSELECT  `kinds`.* FROM `kinds` WHERE `kinds`.`id` = 1 LIMIT 1[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM `ingredients` WHERE `ingredients`.`recipe_id` = 7[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM `recipes`[0m
+  Rendered recipes/index.html.erb within layouts/application (179.4ms)
+  Rendered layouts/shared/_nav.html.erb (5.9ms)
+Completed 200 OK in 355ms (Views: 334.8ms | ActiveRecord: 7.8ms)
+
+
