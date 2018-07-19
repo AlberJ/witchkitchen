@@ -6,8 +6,11 @@
   <thead>
     <tr>
       <th scope="col">Enviado por</th>
+      <th scope="col">Nome</th>
+      <th scope="col">Tipo</th>
       <th scope="col">Ingredientes</th>
       <th scope="col">Preparo</th>
+      <th scope="col">Ver Receita</th>
     </tr>
   </thead>
 
@@ -15,12 +18,15 @@
     <% @recipes.each do |recipe| %>
       <tr>
         <td><%= recipe.user.email %></td>
+        <td><%= recipe.name %></td>
+        <td><%= recipe.kind.name %></td>
         <td><%= recipe.ingredients.count %></td>
-        <% if recipe.preparation.size > 80  %>
-          <td><%= recipe.preparation.first(80)+"..." %></td>
+        <% if recipe.preparation.size > 30  %>
+          <td><%= recipe.preparation.first(30)+"..." %></td>
         <% else  %>
           <td><%= recipe.preparation %></td>
         <% end -%>
+        <td><%= link_to t('Show'), recipe %></td>
       </tr>
     <% end %>
   </tbody>

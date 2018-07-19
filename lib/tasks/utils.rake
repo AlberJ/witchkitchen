@@ -24,7 +24,9 @@ namespace :utils do
     100.times do |i|
       Recipe.create!(
         user: User.all.sample,
-        preparation: Faker::Food.description
+        preparation: Faker::Food.description,
+        kind: Kind.all.sample,
+        name: Faker::Food.dish
         )
     end
     puts "100 Receitas geradas."

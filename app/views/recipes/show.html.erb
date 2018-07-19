@@ -1,7 +1,12 @@
 <p id="notice"><%= notice %></p>
 
 <p>
-  <strong>Usuario: </strong> <%= @recipe.user.name %>
+  <strong>Name: </strong> <%= @recipe.name %><br>
+  <strong>Tipo: </strong> <%= @recipe.kind.name %><br>
+</p>
+
+<p>
+  <strong>Enviado por: </strong> <%= @recipe.user.name %>
 </p>
 
 <p>
@@ -11,7 +16,7 @@
       <tr>
         <th scope="col">Nome</th>
         <th scope="col">Quantidade</th>
-        <th scope="col">Unitade</th>
+        <th scope="col">Unidade</th>
       </tr>
     </thead>
     <tbody>

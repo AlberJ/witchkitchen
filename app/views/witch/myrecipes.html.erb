@@ -5,6 +5,8 @@
 <table class="table table-hover">
   <thead>
     <tr>
+      <th scope="col">Nome</th>
+      <th scope="col">Tipo</th>
       <th scope="col">Ingredientes</th>
       <th scope="col">Preparo</th>
       <th scope="col">Ver</th>
@@ -16,6 +18,8 @@
   <tbody>
     <% @recipes.each do |recipe| %>
       <tr>
+        <td><%= recipe.name %></td>
+        <td><%= recipe.kind.name %></td>
         <td><%= recipe.ingredients.count %></td>
         <% if recipe.preparation.size > 50  %>
           <td><%= recipe.preparation.first(50)+"..." %></td>

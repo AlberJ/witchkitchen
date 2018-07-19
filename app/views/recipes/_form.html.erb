@@ -17,6 +17,17 @@
   </div>
 </p>
 <p>
+  <div class="field">
+    <%= form.label :name %>
+    <%= form.text_field :name, id: :recipe_name, class:"form-control" %>
+  </div>
+<br>
+  <div class="field">
+    <%= form.label :kind_id %>
+    <%= collection_select(:recipe, :kind_id, Kind.all, :id, :name, class:"form-control") %>
+  </div>
+</p>
+<p>
   <div id="ingredients">
     <%= form.fields_for :ingredients do |ingredients_fields| %>
       <%= render partial:"ingredient_fields", locals:{f:ingredients_fields} %>

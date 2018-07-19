@@ -8,6 +8,8 @@ end
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.1.6'
+# Avoid repeating yourself, use pry-rails instead of copying the initializer to every rails project.
+gem 'pry-rails', :group => :development
 # Faz aquela paginação marota agora traduzida muleque....
 gem 'kaminari-i18n'
 # Faz aquela paginação marota

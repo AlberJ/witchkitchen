@@ -16,7 +16,7 @@ class RecipesController < ApplicationController
   # GET /recipes/new
   def new
     @recipe = Recipe.new
-    @user = current_user
+    @kinds = Kind.all
   end
 
   # GET /recipes/1/edit
@@ -71,6 +71,6 @@ class RecipesController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def recipe_params
-      params.require(:recipe).permit(:user_id, :preparation, ingredients_attributes:[:name, :quantity, :unit, :_destroy])
+      params.require(:recipe).permit(:user_id, :name, :kind_id, :preparation, ingredients_attributes:[:name, :quantity, :unit, :_destroy])
     end
 end
