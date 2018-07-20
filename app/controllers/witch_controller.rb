@@ -5,8 +5,5 @@ class WitchController < ApplicationController
     @recipes = current_user.recipes.page(params[:page]).per(7)
   end
 
-  # def new
-  #   @user = current_user
 
-  # end
 end

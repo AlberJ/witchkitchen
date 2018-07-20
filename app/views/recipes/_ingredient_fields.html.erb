@@ -1,5 +1,5 @@
+<p>
 <div class="nested-field">
-  <p>
   <div class="form-row">
     <div class="form-group col-md-4">
       <label>Nome</label>
@@ -13,8 +13,8 @@
       <label>Unidade de medida</label>
       <%= f.text_field :unit, class:"form-control" %>
     </div>
-  </div>
-  <%= link_to_remove_association "Remover ingrediente", f, { wrapper_class: 'ingredient' } %>
-  </p>
-</div>
 
+    <%= link_to_remove_association "Remover ingrediente", f %>
+  </div>
+</div>
+</p>
